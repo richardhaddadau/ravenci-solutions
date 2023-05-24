@@ -1,10 +1,10 @@
-import { useState } from "react";
+import Navigation from "../Components/Navigation.jsx";
 
 const Welcome = () => {
   return (
     <div>
       {/* Navigation */}
-      <nav></nav>
+      <Navigation />
       {/* Hero */}
       <article className="px-14 py-32 flex flex-col justify-center bg-black text-white">
         <section className="">
