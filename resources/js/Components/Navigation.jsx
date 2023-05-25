@@ -8,22 +8,27 @@ const Navigation = () => {
     {
       title: "Home",
       url: "/",
+      key: "nav-home",
     },
     {
       title: "Packages",
       url: "/packages",
+      key: "nav-packages",
     },
     {
       title: "Services",
       url: "/services",
+      key: "nav-services",
     },
     {
       title: "Projects",
       url: "/projects",
+      key: "nav-projects",
     },
     {
       title: "Contact",
       url: "/contact",
+      key: "nav-contact",
     },
   ];
 
@@ -72,6 +77,7 @@ const Navigation = () => {
                   href={nav.url}
                   title={nav.title}
                   className="font-abril hover:text-yellow-500 font-extrabold transition-all duration-200"
+                  key={nav.key}
                 >
                   {nav.title}
                 </a>

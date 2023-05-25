@@ -27,27 +27,63 @@ const Welcome = () => {
     // },
   ];
 
+  const packages = [
+    {
+      title: "Brochure Website",
+      tagline: 'Perfect to "just get online"',
+      image: "",
+      price: 499,
+      key: "pacakage-brochure",
+    },
+    {
+      title: "Premium Website Website",
+      tagline: "Expand your digital footprint",
+      image: "",
+      price: 999,
+      key: "pacakage-brochure",
+    },
+    {
+      title: "Brochure Website",
+      tagline: 'Perfect to "just get online"',
+      image: "",
+      price: 499,
+      key: "pacakage-brochure",
+    },
+    {
+      title: "Brochure Website",
+      tagline: 'Perfect to "just get online"',
+      image: "",
+      price: 499,
+      key: "pacakage-brochure",
+    },
+  ];
+
+  const fixWorkLayout = () => {
+    const workItems = document.querySelectorAll(".previous-work-item");
+    const workWrapper = document.querySelector(".previous-work-wrapper");
+
+    if (workItems.length > 0) {
+      workItems.forEach((item) => {
+        item.style.width = window.innerWidth / 2 + "px";
+      });
+    }
+
+    if (workWrapper) {
+      workWrapper.style.width =
+        previousWork.length * (window.innerWidth / 2 + 16) + "px";
+
+      workWrapper.style.left =
+        -(workWrapper.offsetWidth - window.innerWidth) / 2 + "px";
+    }
+  };
+
   useEffect(() => {
-    console.log(window.innerWidth);
-    console.log(document.querySelector(".previous-work-wrapper").offsetWidth);
-  });
+    fixWorkLayout();
+  }, []);
 
   useLayoutEffect(() => {
     window.addEventListener("resize", () => {
-      document.querySelectorAll(".previous-work-item").forEach((item) => {
-        item.style.width = window.innerWidth / 2 + "px";
-      });
-
-      document.querySelector(".previous-work-wrapper").style.width =
-        previousWork.length * (window.innerWidth / 2 + 16) + "px";
-
-      document.querySelector(".previous-work-wrapper").style.left =
-        -(
-          document.querySelector(".previous-work-wrapper").offsetWidth -
-          window.innerWidth
-        ) /
-          2 +
-        "px";
+      fixWorkLayout();
     });
   });
 
@@ -98,13 +134,6 @@ const Welcome = () => {
               style={{
                 width:
                   previousWork.length * (window.innerWidth / 2 + 16) + "px",
-                left:
-                  -(
-                    document.querySelector(".previous-work-wrapper")
-                      .offsetWidth - window.innerWidth
-                  ) /
-                    2 +
-                  "px",
               }}
             >
               {previousWork.map((work) => {
@@ -126,13 +155,52 @@ const Welcome = () => {
           </section>
         </section>
         {/* Testimonial */}
-        <article></article>
+        <section className="pt-24 pb-10 md:py-24 w-full bg-white">
+          <article className="mx-auto px-4 max-w-xl font-light text-2xl text-center">
+            <img
+              className="relative mx-auto md:absolute mb-6 -mt-16 md:left-10 w-20"
+              src="./open-quote.svg"
+              alt=""
+            />
+            <p className="mb-8">
+              Richard is amazing! He really cares about his work, his customers
+              and people in general. The work that he has done for me goes above
+              and beyond.
+            </p>
+            <p>Definitely recommend Richard to anyone!</p>
+            <img
+              className="relative mx-auto md:absolute mt-6 md:mt-4 md:right-10 w-20"
+              src="./close-quote.svg"
+              alt=""
+            />
+          </article>
+        </section>
         {/* Packages */}
-        <article>
-          <h2></h2>
-          <h3></h3>
-          <section></section>
-        </article>
+        <section className="starry px-10 py-28 flex flex-col items-center max-w-full text-white">
+          <h2 className="">Our Packages Structure</h2>
+          <h3>
+            Choose the product you are after and the add-ons you need. That's
+            it!
+          </h3>
+          <section className="mt-20 flex flex-row flex-wrap justify-center gap-8">
+            {packages.map((item) => {
+              return (
+                <article className="p-6 bg-white rounded-xl w-5/12 max-w-xs text-black text-center">
+                  <img
+                    className="mb-3 w-full aspect-square bg-black"
+                    src={item.image}
+                    alt=""
+                  />
+                  <h3 className="uppercase font-bold text-lg">{item.title}</h3>
+                  <p className="font-light">{item.tagline}</p>
+                  <h4 className="mt-8 text-xl font-bold text-right">
+                    From ${item.price}
+                  </h4>
+                </article>
+              );
+            })}
+          </section>
+        </section>
       </main>
       {/* Footer */}
       <footer></footer>
