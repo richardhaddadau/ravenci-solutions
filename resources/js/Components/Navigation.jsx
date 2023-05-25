@@ -35,7 +35,7 @@ const Navigation = () => {
               <a
                 href={nav.url}
                 title={nav.title}
-                className="hover:text-yellow-500 transition-all duration-200"
+                className="font-abril hover:text-yellow-500 font-extrabold transition-all duration-200"
               >
                 {nav.title}
               </a>
@@ -44,7 +44,7 @@ const Navigation = () => {
         })}
       </section>
       <section className="col-span-2 flex justify-end items-center">
-        <button className="px-4 py-1 border-2 border-white hover:border-yellow-500 hover:bg-yellow-500 rounded-full uppercase text-sm hover:text-black font-normal transition-all duration-200">
+        <button className="px-4 pt-2 pb-1 border-2 border-white hover:border-yellow-500 hover:bg-yellow-500 rounded-full uppercase font-abril text-sm hover:text-black transition-all duration-200">
           Build with us
         </button>
       </section>
