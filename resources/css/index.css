@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h2 {
+    font-family: 'Abril Display';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.hero {
+    background-image: url('./hero-bg.jpg');
+}
+
+.starry {
+    background-image: url('./starry-bg.jpg');
+}
