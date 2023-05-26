@@ -5,17 +5,17 @@ const Welcome = () => {
   const previousWork = [
     {
       title: "QRmory",
-      img: "./Previous Work/prev_qrmory.jpg",
+      img: "images/Previous Work/prev_qrmory.jpg",
     },
 
     {
       title: "Nikita Morell",
-      img: "./Previous Work/prev_nikita-morell.jpg",
+      img: "images/Previous Work/prev_nikita-morell.jpg",
     },
 
     {
       title: "Intercorp",
-      img: "./Previous Work/prev_intercorp.jpg",
+      img: "images/Previous Work/prev_intercorp.jpg",
     },
     // {
     //   title: "Cadeaurable",
@@ -40,21 +40,21 @@ const Welcome = () => {
       tagline: "Expand your digital footprint",
       image: "",
       price: 999,
-      key: "pacakage-brochure",
+      key: "pacakage-premium",
     },
     {
       title: "Brochure Website",
-      tagline: 'Perfect to "just get online"',
+      tagline: "Serve your customers online",
       image: "",
-      price: 499,
-      key: "pacakage-brochure",
+      price: 2899,
+      key: "pacakage-extensive",
     },
     {
-      title: "Brochure Website",
-      tagline: 'Perfect to "just get online"',
+      title: "Mobile App",
+      tagline: "Build an app that serves many",
       image: "",
-      price: 499,
-      key: "pacakage-brochure",
+      price: 7999,
+      key: "pacakage-mobile",
     },
   ];
 
@@ -139,7 +139,7 @@ const Welcome = () => {
               {previousWork.map((work) => {
                 return (
                   <article
-                    className="previous-work-item mx-2 my-0 pt-4 md:pt-6 lg:pt-10 px-4 md:px-6 lg:px-10 inline-block bg-yellow-500"
+                    className="previous-work-item mx-2 my-0 pt-4 md:pt-6 lg:pt-10 px-4 md:px-6 lg:px-10 inline-block bg-yellow-500 overflow-hidden"
                     style={{ width: window.innerWidth / 2 }}
                     key={work.title}
                   >
@@ -155,11 +155,11 @@ const Welcome = () => {
           </section>
         </section>
         {/* Testimonial */}
-        <section className="pt-24 pb-10 md:py-24 w-full bg-white">
+        <section className="pt-24 pb-10 md:py-24 w-full bg-white shadow-black shadow-xl">
           <article className="mx-auto px-4 max-w-xl font-light text-2xl text-center">
             <img
               className="relative mx-auto md:absolute mb-6 -mt-16 md:left-10 w-20"
-              src="./open-quote.svg"
+              src="images/open-quote.svg"
               alt=""
             />
             <p className="mb-8">
@@ -170,30 +170,35 @@ const Welcome = () => {
             <p>Definitely recommend Richard to anyone!</p>
             <img
               className="relative mx-auto md:absolute mt-6 md:mt-4 md:right-10 w-20"
-              src="./close-quote.svg"
+              src="images/close-quote.svg"
               alt=""
             />
           </article>
         </section>
         {/* Packages */}
-        <section className="starry px-10 py-28 flex flex-col items-center max-w-full text-white">
+        <section className="starry-end px-6 md:px-10 pt-28 pb-40 lg:pb-80 flex flex-col items-center max-w-full text-white">
           <h2 className="">Our Packages Structure</h2>
-          <h3>
+          <h3 className="text-center">
             Choose the product you are after and the add-ons you need. That's
             it!
           </h3>
-          <section className="mt-20 flex flex-row flex-wrap justify-center gap-8">
+          <section className="mt-20 flex flex-row flex-wrap justify-evenly gap-8 w-full border-2">
             {packages.map((item) => {
               return (
-                <article className="p-6 bg-white rounded-xl w-5/12 max-w-xs text-black text-center">
-                  <img
-                    className="mb-3 w-full aspect-square bg-black"
-                    src={item.image}
-                    alt=""
-                  />
-                  <h3 className="uppercase font-bold text-lg">{item.title}</h3>
-                  <p className="font-light">{item.tagline}</p>
-                  <h4 className="mt-8 text-xl font-bold text-right">
+                <article className="p-6 flex flex-col justify-between bg-white rounded-xl w-full w-1/2 lg:w-1/4 max-w-xxs text-black text-center">
+                  <div>
+                    <img
+                      className="mb-3 w-full aspect-square bg-black"
+                      src={item.image}
+                      alt=""
+                    />
+                    <h3 className="uppercase font-bold text-lg">
+                      {item.title}
+                    </h3>
+                    <p className="font-light">{item.tagline}</p>
+                  </div>
+
+                  <h4 className="mt-8 text-xl font-bold text-right uppercase">
                     From ${item.price}
                   </h4>
                 </article>

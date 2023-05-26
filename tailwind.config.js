@@ -10,6 +10,9 @@ module.exports = {
       minHeight: {
         hero: "600px",
       },
+      maxWidth: {
+        xxs: "15rem",
+      },
     },
   },
   plugins: [],
