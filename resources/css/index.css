@@ -20,7 +20,7 @@ h2 {
 }
 
 .starry-end {
-    background-image: url('images/page-end.jpg');
+    background-image: url('../../images/page-end.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
