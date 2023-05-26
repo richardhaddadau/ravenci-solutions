@@ -182,7 +182,7 @@ const Welcome = () => {
             Choose the product you are after and the add-ons you need. That's
             it!
           </h3>
-          <section className="mt-20 flex flex-row flex-wrap justify-evenly gap-8 w-full border-2">
+          <section className="mt-20 flex flex-row flex-wrap justify-evenly gap-8 w-full">
             {packages.map((item) => {
               return (
                 <article className="p-6 flex flex-col justify-between bg-white rounded-xl w-full w-1/2 lg:w-1/4 max-w-xxs text-black text-center">
@@ -208,7 +208,28 @@ const Welcome = () => {
         </section>
       </main>
       {/* Footer */}
-      <footer></footer>
+      <footer className="p-16 grid grid-cols-12 flex items-stretch bg-black">
+        <section className="p-4 col-span-4">
+          {/* Logo */}
+          <p className="text-stone-400 text-right">Australia, Brisbane</p>
+          <article className="text-right">
+            <a className="font-light hover:font-bold" href="tel:+61730960059">
+              (07) 3096 0059
+            </a>
+            <br />
+            <a className="font-light hover:font-bold" href="tel:+61426238272">
+              (+61) 426 238 272
+            </a>
+          </article>
+        </section>
+        <section className="p-4 col-span-8 flex flex-col items-center border-2">
+          <h5 className="text-white font-bold">
+            Subscribe to our newsletter for great tips on improving designs,
+            enhancing web performance, doing your own SEO, and much more:
+          </h5>
+          <FontAwesomeIcon icon="fa-sharp fa-solid fa-arrow-right" />
+        </section>
+      </footer>
     </div>
   );
 };

@@ -10,6 +10,16 @@ h2 {
     line-height: 2.5rem;
 }
 
+a {
+    color: #a3a3a3;
+
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #eab308;
+}
+
 .hero {
     background-image: url('../../images/hero-bg.jpg');
 }
