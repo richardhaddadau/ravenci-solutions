@@ -1,6 +1,8 @@
 import Navigation from "../Components/Navigation.jsx";
 import { useEffect, useLayoutEffect } from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import NavLogo from "../Components/NavLogo.jsx";
 
 const Welcome = () => {
   const previousWork = [
@@ -210,9 +212,11 @@ const Welcome = () => {
       </main>
       {/* Footer */}
       <footer className="p-16 grid grid-cols-12 flex items-stretch bg-black">
-        <section className="p-4 col-span-4">
-          {/* Logo */}
-          <p className="text-stone-400 text-right">Australia, Brisbane</p>
+        <section className="p-4 col-span-3 flex flex-col justify-center">
+          <NavLogo />
+          <p className="my-6 text-lg text-stone-200 text-right">
+            Australia, Brisbane
+          </p>
           <article className="text-right">
             <a className="font-light hover:font-bold" href="tel:+61730960059">
               (07) 3096 0059
@@ -223,12 +227,25 @@ const Welcome = () => {
             </a>
           </article>
         </section>
-        <section className="p-4 col-span-8 flex flex-col items-center border-2">
-          <h5 className="text-white font-bold">
-            Subscribe to our newsletter for great tips on improving designs,
-            enhancing web performance, doing your own SEO, and much more:
+        <section className="mx-auto p-4 px-14 col-span-9 flex flex-col justify-center max-w-xl">
+          <h5 className="text-white text-lg">
+            For great tips on improving designs, enhancing web performance,
+            doing your own SEO, and much more:
           </h5>
-          <FontAwesomeIcon icon="fa-sharp fa-solid fa-arrow-right" />
+          <form className="relative mt-4 p-1.5 pr-12 flex items-center bg-white w-full rounded-full">
+            <input
+              className="relative ml-3 py-1 bg-transparent w-full text-xl font-bold outline-none placeholder:italic placeholder:font-light"
+              type="text"
+              placeholder="Your email address"
+            />
+            <button className="absolute right-4 hover:right-2 transition-all duration-300">
+              <FontAwesomeIcon
+                className="text-yellow-500"
+                icon={faArrowRight}
+                size="2xl"
+              />
+            </button>
+          </form>
         </section>
       </footer>
     </div>
