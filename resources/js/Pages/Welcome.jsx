@@ -188,20 +188,18 @@ const Welcome = () => {
           <section className="mt-20 flex flex-row flex-wrap justify-evenly gap-8 w-full">
             {packages.map((item) => {
               return (
-                <article className="p-6 flex flex-col justify-between bg-white rounded-xl w-full w-1/2 lg:w-1/4 max-w-xxs text-black text-center">
+                <article className="p-4 flex flex-col justify-between bg-white rounded-xl w-full w-1/2 lg:w-1/4 max-w-xxs text-black text-center">
                   <div>
                     <img
                       className="mb-3 w-full aspect-square bg-black"
                       src={item.image}
                       alt=""
                     />
-                    <h3 className="uppercase font-bold text-lg">
-                      {item.title}
-                    </h3>
+                    <h3 className="uppercase font-bold">{item.title}</h3>
                     <p className="font-light">{item.tagline}</p>
                   </div>
 
-                  <h4 className="mt-8 text-xl font-bold text-right uppercase">
+                  <h4 className="mt-8 text-lg font-bold text-right uppercase">
                     From ${item.price}
                   </h4>
                 </article>
@@ -211,13 +209,13 @@ const Welcome = () => {
         </section>
       </main>
       {/* Footer */}
-      <footer className="p-16 grid grid-cols-12 flex items-stretch bg-black">
-        <section className="p-4 col-span-3 flex flex-col justify-center">
-          <NavLogo />
+      <footer className="px-4 lg:px-16 py-16 lg:grid grid-cols-12 flex flex-col items-stretch bg-black">
+        <section className="p-4 col-span-3 flex flex-col justify-center items-end">
+          <NavLogo className="max-w-xs" />
           <p className="my-6 text-lg text-stone-200 text-right">
             Australia, Brisbane
           </p>
-          <article className="text-right">
+          <article className="mb-10 lg:mb-0 text-right">
             <a className="font-light hover:font-bold" href="tel:+61730960059">
               (07) 3096 0059
             </a>
@@ -227,8 +225,8 @@ const Welcome = () => {
             </a>
           </article>
         </section>
-        <section className="mx-auto p-4 px-14 col-span-9 flex flex-col justify-center max-w-xl">
-          <h5 className="text-white text-lg">
+        <section className="lg:mx-auto px-6 lg:px-14 col-span-9 flex flex-col justify-center max-w-xs md:max-w-sm lg:max-w-xl">
+          <h5 className="text-left text-white text-lg">
             For great tips on improving designs, enhancing web performance,
             doing your own SEO, and much more:
           </h5>

@@ -33,7 +33,7 @@ a:hover {
     background-image: url('../../images/page-end.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom center;
 }
 
 /* TABLET ONLY */
