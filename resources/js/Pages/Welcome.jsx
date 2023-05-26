@@ -1,5 +1,6 @@
 import Navigation from "../Components/Navigation.jsx";
 import { useEffect, useLayoutEffect } from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Welcome = () => {
   const previousWork = [
