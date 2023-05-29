@@ -46,7 +46,7 @@ const Welcome = () => {
       key: "pacakage-premium",
     },
     {
-      title: "Brochure Website",
+      title: "Extensive Web App",
       tagline: "Serve your customers online",
       image: "",
       price: 2899,
@@ -54,7 +54,7 @@ const Welcome = () => {
     },
     {
       title: "Mobile App",
-      tagline: "Build an app that serves many",
+      tagline: "Build an app that takes your dream to many",
       image: "",
       price: 7999,
       key: "pacakage-mobile",
@@ -107,10 +107,10 @@ const Welcome = () => {
         </section>
 
         <section className="mt-14 lg:mt-24 flex flex-col lg:flex-row gap-8 justify-start items-center">
-          <button className="px-4 py-1 bg-white hover:bg-yellow-500 rounded-full uppercase text-black text-base lg:text-lg font-normal transition-all duration-200">
+          <button className="px-4 py-1 bg-white hover:bg-yellow-500 rounded-full uppercase text-black text-base lg:text-lg font-normal transition-all duration-300">
             Build with us
           </button>
-          <button className="uppercase border-b-2 border-white hover:border-yellow-500 hover:text-yellow-500 transition-all duration-200">
+          <button className="uppercase border-b-2 border-white hover:border-yellow-500 hover:text-yellow-500 transition-all duration-300">
             Still deciding?
           </button>
         </section>
@@ -181,7 +181,7 @@ const Welcome = () => {
         {/* Packages */}
         <section className="starry-end px-6 md:px-10 pt-28 pb-40 lg:pb-80 flex flex-col items-center max-w-full text-white">
           <h2 className="">Our Packages Structure</h2>
-          <h3 className="text-center">
+          <h3 className="text-center font-light text-xl">
             Choose the product you are after and the add-ons you need. That's
             it!
           </h3>

@@ -76,7 +76,7 @@ const Navigation = () => {
                 <a
                   href={nav.url}
                   title={nav.title}
-                  className="font-abril hover:text-yellow-500 font-extrabold transition-all duration-200"
+                  className="font-abril hover:text-yellow-500 hover:border-b-2 border-yellow-500 font-extrabold transition-all duration-200"
                   key={nav.key}
                 >
                   {nav.title}
