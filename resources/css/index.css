@@ -36,6 +36,10 @@ a:hover {
     background-position: bottom center;
 }
 
+.previous-work-wrapper {
+    transition: all 0.3s ease;
+}
+
 /* TABLET ONLY */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     h2 {
@@ -56,3 +60,5 @@ a:hover {
         line-height: 2rem; /* 32px */
     }
 }
+
+/* ANIMATIONS */

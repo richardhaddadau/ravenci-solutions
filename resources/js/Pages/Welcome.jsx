@@ -1,10 +1,13 @@
 import Navigation from "../Components/Navigation.jsx";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import NavLogo from "../Components/NavLogo.jsx";
 
 const Welcome = () => {
+  const [defaultMargin, setDefaultMargin] = useState(8);
+  let itemWidth = 0;
+
   const previousWork = [
     {
       title: "QRmory",
@@ -20,10 +23,10 @@ const Welcome = () => {
       title: "Intercorp",
       img: "images/Previous Work/prev_intercorp.jpg",
     },
-    // {
-    //   title: "Cadeaurable",
-    //   img: "./Previous Work/prev_cadeaurable.jpg",
-    // },
+    {
+      title: "Cadeaurable",
+      img: "images/Previous Work/prev_cadeaurable.jpg",
+    },
     // {
     //   title: "Teacher Speechie",
     //   img: "./Previous Work/prev_teacher-speechie.jpg",
@@ -62,21 +65,22 @@ const Welcome = () => {
   ];
 
   const fixWorkLayout = () => {
-    const workItems = document.querySelectorAll(".previous-work-item");
     const workWrapper = document.querySelector(".previous-work-wrapper");
+    const workItems = document.querySelectorAll(".previous-work-item");
+
+    const eachItemWidth = window.innerWidth / 2.5;
 
     if (workItems.length > 0) {
       workItems.forEach((item) => {
-        item.style.width = window.innerWidth / 2 + "px";
+        item.style.width = eachItemWidth + "px";
       });
     }
 
     if (workWrapper) {
       workWrapper.style.width =
-        previousWork.length * (window.innerWidth / 2 + 16) + "px";
+        previousWork.length * (eachItemWidth + 20) + "px";
 
-      workWrapper.style.left =
-        -(workWrapper.offsetWidth - window.innerWidth) / 2 + "px";
+      workWrapper.style.left = -(defaultMargin + eachItemWidth / 3) + "px";
     }
   };
 
@@ -128,12 +132,12 @@ const Welcome = () => {
           </article>
         </section>
         {/* Previous Work */}
-        <section className="starry py-28 flex flex-col items-center max-w-full text-white">
+        <section className="starry pt-28 pb-16 flex flex-col items-center max-w-full text-white">
           <h2 className="z-10">Previous Work</h2>
 
           <section className="relative pt-16 w-full overflow-x-hidden">
             <div
-              className="previous-work-wrapper relative"
+              className="previous-work-wrapper relative flex flex-row"
               style={{
                 width:
                   previousWork.length * (window.innerWidth / 2 + 16) + "px",
@@ -143,7 +147,7 @@ const Welcome = () => {
                 return (
                   <article
                     className="previous-work-item mx-2 my-0 pt-4 md:pt-6 lg:pt-10 px-4 md:px-6 lg:px-10 inline-block bg-yellow-500 overflow-hidden"
-                    style={{ width: window.innerWidth / 2 }}
+                    style={{ width: window.innerWidth / 3 }}
                     key={work.title}
                   >
                     <img
