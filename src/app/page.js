@@ -8,7 +8,7 @@ export default function Home() {
           <img className="h-8 md:h-10" src="/logo-dark.svg" />
         </nav>
         <section className="flex flex-col items-center justify-center flex-grow w-full">
-          <h1 className="text-3xl md:text-5xl text-primary font-sans font-bold text-center">
+          <h1 className="text-3xl md:text-5xl text-primary font-serif font-bold text-center">
             <AnimatedText />
             with RAVENCI.
           </h1>

@@ -1,8 +1,10 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "RAVENCI Solutions",
-  description: "Transforming your digital vision into reality",
+  title:
+    "Brisbane-based web and mobile app development agency - RAVENCI Solutions",
+  description:
+    "Transform your digital vision into reality with RAVENCI Solutions, a Brisbane-based web and mobile app development agency.",
 };
 
 export default function RootLayout({ children }) {

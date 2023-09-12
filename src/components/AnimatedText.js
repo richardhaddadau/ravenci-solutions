@@ -48,7 +48,7 @@ export default function AnimatedText() {
   }, []);
 
   return (
-    <span className="pr-2 md:pr-4">
+    <span className="pr-1 md:pr-2">
       {animatedText}
       <span className={cursorClass + " -mr-1 md:-mr-2 font-light"}>|</span>
     </span>
