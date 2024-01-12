@@ -14,6 +14,7 @@ const config: Config = {
         poppins: ["Poppins", "sans-serif"],
         margarita: ["Margarita", "sans-serif"],
       },
+      maxWidth: { page: "1200px" },
     },
   },
   plugins: [],
