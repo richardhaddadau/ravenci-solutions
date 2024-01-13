@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#D3A62A",
+      },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
