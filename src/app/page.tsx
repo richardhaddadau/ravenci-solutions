@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import HomeOneColumnLeft from "@/sections/HomeOneColumnLeft";
 import HomeOneColumnCenter from "@/sections/HomeOneColumnCenter";
 import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
+import TestimonialCarousel from "@/sections/TestimonialCarousel";
+import TestimonialSingles from "@/sections/TestimonialSingles";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),
@@ -36,11 +38,19 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-stone-100">
+    <main className="flex min-h-screen flex-col items-center bg-ravenci-light-gray">
       <HomeHero />
       <HomeOneColumnLeft />
       <HomeStepsSection />
       <HomeOneColumnRight />
+      <TestimonialSingles
+        content={
+          "I could not recommend Richard From 1VINE Design more highly. His knowledge is remarkable, his professionalism exceptional, and the way he completely sorted my issues, quickly, effortlessly was simply brilliant. Champion bloke, brilliant at what he does."
+        }
+        author={"Geoff Beisler"}
+        image={null}
+      />
+      <HomeOneColumnCenter />
     </main>
   );
 }

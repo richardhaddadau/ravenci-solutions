@@ -10,7 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#D3A62A",
+        ravenci: {
+          DEFAULT: "#1b1b1b",
+          "light-gray": "#fbfbfb",
+          gray: "#ebebeb",
+          "dark-gray": "#7b7b7b",
+          primary: "#7f1670",
+        },
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],

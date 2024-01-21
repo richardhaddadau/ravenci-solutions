@@ -42,11 +42,11 @@ const HomeStepsSection = () => {
 
   return (
     <section
-      className={`py-36 flex flex-col items-center justify-center w-full bg-stone-200`}
+      className={`py-36 flex flex-col items-center justify-center w-full bg-ravenci-gray`}
     >
       <div className={`mb-20 flex flex-col items-center`}>
         <h3
-          className={`mb-3 font-poppins font-medium text-sm tracking-wide text-stone-400 uppercase`}
+          className={`mb-3 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
         >
           Project Planning
         </h3>
@@ -68,13 +68,13 @@ const HomeStepsSection = () => {
               className={`relative flex justify-center items-center w-full h-16`}
             >
               <span
-                className={`absolute top-1/2 w-full h-[1px] bg-stone-900 -z-10`}
+                className={`absolute top-1/2 w-full h-[1px] bg-ravenci -z-10`}
               ></span>
               <span
-                className={`absolute flex justify-center items-center w-12 group-hover:w-16 h-12 group-hover:h-16 bg-fuchsia-900 rounded-full shadow-lg shadow-stone-300 opacity-0 group-hover:opacity-100 z-20 transition-all duration-[0.4s]`}
+                className={`absolute flex justify-center items-center w-12 group-hover:w-16 h-12 group-hover:h-16 bg-ravenci-primary rounded-full shadow-lg shadow-stone-300 opacity-0 group-hover:opacity-100 z-20 transition-all duration-[0.4s]`}
               ></span>
               <span
-                className={`pt-1.5 flex justify-center items-center w-12 h-12 bg-stone-50 rounded-full shadow-lg shadow-stone-300 group-hover:shadow-none font-poppins font-medium z-20 transition-all duration-700`}
+                className={`pt-1.5 flex justify-center items-center w-12 h-12 bg-ravenci-light-gray rounded-full shadow-lg shadow-stone-300 group-hover:shadow-none font-poppins font-medium z-20 transition-all duration-700`}
               >
                 {step.number}
               </span>
@@ -83,11 +83,13 @@ const HomeStepsSection = () => {
               className={`py-7 px-4 flex flex-col justify-center items-center`}
             >
               <h4
-                className={`mb-4 font-bold text-xs tracking-widest text-fuchsia-900 uppercase`}
+                className={`mb-4 font-bold text-xs tracking-widest text-ravenci-primary uppercase`}
               >
                 {step.title}
               </h4>
-              <p className={`text-xs text-stone-500 text-center leading-6`}>
+              <p
+                className={`text-xs text-ravenci-dark-gray text-center leading-6`}
+              >
                 {step.description}
               </p>
             </div>
@@ -96,7 +98,7 @@ const HomeStepsSection = () => {
       </section>
       <Link
         href="/contact"
-        className={`mt-20 py-3 px-8 bg-stone-50 hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}
+        className={`mt-20 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}
       >
         Start a Project
       </Link>
