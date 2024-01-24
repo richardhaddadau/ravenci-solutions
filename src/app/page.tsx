@@ -45,7 +45,7 @@ export default function Home() {
       <HomeOneColumnRight />
       <TestimonialSingles
         content={
-          "I could not recommend Richard From 1VINE Design more highly. His knowledge is remarkable, his professionalism exceptional, and the way he completely sorted my issues, quickly, effortlessly was simply brilliant. Champion bloke, brilliant at what he does."
+          "I could not recommend Richard more highly. His knowledge is remarkable, his professionalism exceptional, and the way he completely sorted my issues, quickly, effortlessly was simply brilliant. Champion bloke, brilliant at what he does."
         }
         author={"Geoff Beisler"}
         image={null}

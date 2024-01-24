@@ -44,13 +44,15 @@ const HomeStepsSection = () => {
     <section
       className={`py-36 flex flex-col items-center justify-center w-full bg-ravenci-gray`}
     >
-      <div className={`mb-20 flex flex-col items-center`}>
+      <div className={`mb-20 px-4 flex flex-col items-center`}>
         <h3
           className={`mb-3 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
         >
           Project Planning
         </h3>
-        <h2 className={`font-poppins font-semibold text-4xl tracking-tight`}>
+        <h2
+          className={`font-poppins font-semibold text-4xl tracking-tight text-center`}
+        >
           Designed for you
         </h2>
       </div>
