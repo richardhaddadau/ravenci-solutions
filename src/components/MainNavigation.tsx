@@ -59,6 +59,7 @@ const MainNavigation = (props: MainNavigationProps) => {
         onClick={() => setNavOpen(false)}
       ></div>
 
+      {/* Actual Navigation */}
       <nav
         className={`${navBehvaiour} px-4 py-6 lg:py-4 flex justify-between w-full bg-white shadow-lg shadow-ravenci/5 transition-all duration-500 z-50`}
       >
@@ -87,7 +88,7 @@ const MainNavigation = (props: MainNavigationProps) => {
           />
 
           <article
-            className={`fixed lg:relative px-3 sm:px-6 lg:px-0 pb-2 sm:pt-20 lg:p-0 ${
+            className={`fixed lg:relative px-3 sm:px-6 lg:px-0 pb-2 pt-20 lg:p-0 ${
               navOpen ? "top-0 lg:right-auto" : "-top-full lg:right-auto"
             } lg:top-auto right-0 w-full lg:max-w-full lg:h-auto bg-ravenci-light-gray lg:bg-transparent transition-all duration-500 -z-20 lg:z-0`}
           >
@@ -109,7 +110,7 @@ const MainNavigation = (props: MainNavigationProps) => {
                     <span
                       className={`relative font-poppins text-base sm:text-sm lg:text-xs ${
                         page.link === pathname
-                          ? "text-ravenci-light-gray"
+                          ? "text-ravenci-light-gray lg:text-ravenci-primary"
                           : "text-ravenci"
                       } uppercase z-10 transition-all duration-250`}
                     >
