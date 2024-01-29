@@ -1,7 +1,52 @@
+"use client";
+
+import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
+import homeStableTagline from "@/app/(mdx)/homeStableTagline.mdx";
+import homeStableContent from "@/app/(mdx)/homeStableContent.mdx";
 
-const HomeOneColumnLeft = () => {
+const ContentBlock = styled.div`
+  margin-top: 2rem;
+
+  p {
+    margin-bottom: 1.25rem;
+
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #7b7b7b;
+  }
+`;
+
+type HomeOneColumnLeftProps = {
+  tagline: any;
+  title: string;
+  content: any;
+  ctaLink: string;
+  ctaText: string;
+  ctaTitle: string;
+};
+
+const HomeOneColumnLeft = ({
+  tagline,
+  title,
+  content,
+  ctaText,
+  ctaLink,
+  ctaTitle,
+}: HomeOneColumnLeftProps) => {
+  const TaglineComponent: { [key: string]: any } = {
+    stable: homeStableTagline,
+  };
+
+  const ContentComponent: { [key: string]: any } = {
+    stable: homeStableContent,
+  };
+
+  const MDXTagline = TaglineComponent[tagline];
+  const MDXContent = ContentComponent[content];
+
   return (
     <section
       id={`find-out-more`}
@@ -16,19 +61,18 @@ const HomeOneColumnLeft = () => {
           <h3
             className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
           >
-            About
+            {MDXTagline && <MDXTagline />}
           </h3>
           <h2 className={`font-poppins font-semibold text-4xl tracking-tight`}>
-            Technology keeps changing but change rarely comes with reliability
+            {title}
           </h2>
-          <p className={`mt-8 mb-12 text-sm text-ravenci-dark-gray leading-6`}>
-            No two businesses are identical
-          </p>
+          <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
           <Link
-            href={`/about`}
-            className={`py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
+            href={ctaLink}
+            title={ctaTitle}
+            className={`mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
           >
-            About Ravenci
+            {ctaText}
           </Link>
         </div>
         <div

@@ -48,12 +48,12 @@ const HomeStepsSection = () => {
         <h3
           className={`mb-3 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
         >
-          Project Planning
+          Every Project
         </h3>
         <h2
           className={`font-poppins font-semibold text-4xl tracking-tight text-center`}
         >
-          Designed for you
+          Tailored for you
         </h2>
       </div>
 

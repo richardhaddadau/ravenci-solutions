@@ -1,12 +1,11 @@
-import Image from "next/image";
 import HomeHero from "@/sections/HomeHero";
 import HomeStepsSection from "@/sections/HomeStepsSection";
 import { Metadata } from "next";
 import HomeOneColumnLeft from "@/sections/HomeOneColumnLeft";
 import HomeOneColumnCenter from "@/sections/HomeOneColumnCenter";
 import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
-import TestimonialCarousel from "@/sections/TestimonialCarousel";
 import TestimonialSingles from "@/sections/TestimonialSingles";
+import ClientLogos from "@/sections/ClientLogos";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),
@@ -40,9 +39,29 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-ravenci-light-gray">
       <HomeHero />
-      <HomeOneColumnLeft />
+
+      {/*<ClientLogos />*/}
+
+      <HomeOneColumnLeft
+        tagline={`stable`}
+        title={`Good development isn't fragile`}
+        content={`stable`}
+        ctaLink={``}
+        ctaText={`Here's why we are confident`}
+        ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
+      />
+
       <HomeStepsSection />
-      <HomeOneColumnRight />
+
+      <HomeOneColumnRight
+        tagline={`reliable`}
+        title={`Technology changes often and change rarely offers reliability`}
+        content={`reliable`}
+        ctaLink={``}
+        ctaText={`Maintenance Packages`}
+        ctaTitle={`Maintenance Packages and Prices`}
+      />
+
       <TestimonialSingles
         content={
           "I could not recommend Richard more highly. His knowledge is remarkable, his professionalism exceptional, and the way he completely sorted my issues, quickly, effortlessly was simply brilliant. Champion bloke, brilliant at what he does."
@@ -50,7 +69,15 @@ export default function Home() {
         author={"Geoff Beisler"}
         image={null}
       />
-      <HomeOneColumnCenter />
+
+      <HomeOneColumnCenter
+        tagline={`reliable`}
+        title={`Technology changes often and change rarely offers reliability`}
+        content={`reliable`}
+        ctaLink={``}
+        ctaText={`Maintenance Packages`}
+        ctaTitle={`Maintenance Packages and Prices`}
+      />
     </main>
   );
 }

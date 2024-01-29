@@ -3,7 +3,7 @@ import Link from "next/link";
 const HomeHero = () => {
   return (
     <section
-      className={`pt-24 px-4 flex flex-col justify-center items-center w-full min-h-[770px] bg-ravenci-gray`}
+      className={`pt-40 pb-20 px-4 flex flex-col justify-center items-center w-full min-h-[700px] bg-ravenci-gray`}
     >
       <h1
         className={`font-poppins font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center`}
