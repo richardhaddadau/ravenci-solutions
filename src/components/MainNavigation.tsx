@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import { TfiLayoutGrid2Alt } from "react-icons/tfi";
-import { RiCloseFill } from "react-icons/ri";
 import { usePathname } from "next/navigation";
+
+import { TfiLayoutGrid2Alt } from "react-icons/tfi";
 
 interface MainNavigationProps {
   pages: {
@@ -17,7 +17,7 @@ interface MainNavigationProps {
 }
 
 const MainNavigation = (props: MainNavigationProps) => {
-  const [navBehvaiour, setNavBehaviour] = useState("");
+  const [navBehaviour, setNavBehaviour] = useState("");
   const [navOpen, setNavOpen] = useState(false);
 
   const pathname = usePathname();
@@ -63,7 +63,7 @@ const MainNavigation = (props: MainNavigationProps) => {
 
       {/* Actual Navigation */}
       <nav
-        className={`${navBehvaiour} px-4 py-6 lg:py-4 flex justify-between w-full bg-white shadow-lg shadow-ravenci/5 transition-all duration-500 z-50`}
+        className={`${navBehaviour} px-4 py-6 lg:py-4 flex justify-between w-full bg-white shadow-lg shadow-ravenci/5 transition-all duration-500 z-50`}
       >
         <div
           className={`absolute top-0 left-0 bg-white w-full h-full z-0`}
@@ -106,7 +106,7 @@ const MainNavigation = (props: MainNavigationProps) => {
                   <li
                     className={`group relative mb-5 lg:mb-0 p-4 px-8 pb-3 lg:py-1.5 lg:px-2 ${
                       page.link === pathname
-                        ? "bg-ravenci-primary lg:bg-transparent"
+                        ? "bg-ravenci-primary lg:bg-transparent font-bold"
                         : "bg-transparent"
                     } hover:bg-ravenci-primary/10 lg:hover:bg-transparent transition-all duration-500 overflow-hidden`}
                   >
