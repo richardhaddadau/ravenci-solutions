@@ -1,11 +1,12 @@
+import { Metadata } from "next";
+
 import HomeHero from "@/sections/HomeHero";
 import HomeStepsSection from "@/sections/HomeStepsSection";
-import { Metadata } from "next";
+
 import HomeOneColumnLeft from "@/sections/HomeOneColumnLeft";
 import HomeOneColumnCenter from "@/sections/HomeOneColumnCenter";
 import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
 import TestimonialSingles from "@/sections/TestimonialSingles";
-import ClientLogos from "@/sections/ClientLogos";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),

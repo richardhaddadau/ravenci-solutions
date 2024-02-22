@@ -45,6 +45,8 @@ const MainNavigation = (props: MainNavigationProps) => {
       setNavBehaviour(navBreakpoints[+activeBreakpoint]);
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -75,6 +77,7 @@ const MainNavigation = (props: MainNavigationProps) => {
             alt={`Welcome to RAVENCI`}
             width={125}
             height={25}
+            priority
           />
         </section>
 
