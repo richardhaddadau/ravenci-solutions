@@ -4,6 +4,8 @@ import MainNavigation from "@/components/MainNavigation";
 import Head from "next/head";
 import Footer from "@/sections/Footer";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 export default function RootLayout({
   children,
 }: {
@@ -41,6 +43,7 @@ export default function RootLayout({
           ]}
         />
         {children}
+        <GoogleAnalytics gaId={`G-8TL2E4F9CH`} />
         <Footer />
       </body>
     </html>
