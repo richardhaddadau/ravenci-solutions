@@ -7,6 +7,7 @@ import HomeOneColumnLeft from "@/sections/HomeOneColumnLeft";
 import HomeOneColumnCenter from "@/sections/HomeOneColumnCenter";
 import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
 import TestimonialSingles from "@/sections/TestimonialSingles";
+import LogosPanel from "@/sections/LogosPanel";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),
@@ -41,7 +42,14 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-ravenci-light-gray">
       <HomeHero />
 
-      {/*<ClientLogos />*/}
+      {/* Client Logos */}
+      <LogosPanel
+        logos={CLIENT_LOGOS}
+        heading={`Some of my previous clients`}
+        headingColour={`text-neutral-800`}
+        headingSide={`bottom`}
+        theme={`bg-ravenci-gray`}
+      />
 
       <HomeOneColumnLeft
         tagline={`stable`}
@@ -56,12 +64,15 @@ export default function Home() {
 
       <HomeOneColumnRight
         tagline={`reliable`}
-        title={`Technology changes often and change rarely offers reliability`}
+        title={`Expert developers build for the future, today`}
         content={`reliable`}
         ctaLink={``}
-        ctaText={`Maintenance Packages`}
-        ctaTitle={`Maintenance Packages and Prices`}
+        ctaText={`Start a New Project`}
+        ctaTitle={`Develop with RAVENCI, today`}
       />
+
+      {/* Technologies I Use */}
+      <LogosPanel />
 
       <TestimonialSingles
         content={
@@ -73,7 +84,7 @@ export default function Home() {
 
       <HomeOneColumnCenter
         tagline={`reliable`}
-        title={`Technology changes often and change rarely offers reliability`}
+        title={`Technology changes often but change rarely offers reliability`}
         content={`reliable`}
         ctaLink={``}
         ctaText={`Maintenance Packages`}
@@ -82,3 +93,46 @@ export default function Home() {
     </main>
   );
 }
+
+const CLIENT_LOGOS = [
+  {
+    title: "Nikita Morell",
+    logo: "/clients/nikita-morell-logo.svg",
+    href: "https://nikitamorell.com/",
+  },
+  {
+    title: "SAC Consulting",
+    logo: "/clients/sac-consulting-logo.svg",
+    href: "https://sacconsulting.com.au/",
+  },
+  {
+    title: "Insight Medical Careers",
+    logo: "/clients/insight-medical-careers-logo.svg",
+    href: "https://insightmedicalcareers.com.au/",
+  },
+  {
+    title: "Cadeaurable",
+    logo: "/clients/cadeaurable-logo.svg",
+    href: "https://cadeaurable.com.au/",
+  },
+  {
+    title: "Book it MATE",
+    logo: "/clients/book-it-mate-logo.svg",
+    href: "https://bookitmate.com.au/",
+  },
+  {
+    title: "My Pop Off",
+    logo: "/clients/my-pop-off-logo.svg",
+    href: "https://mypopoff.com.au/",
+  },
+  {
+    title: "Stickeroo",
+    logo: "/clients/stickeroo-logo.svg",
+    href: "https://stickeroo.com/",
+  },
+  {
+    title: "Intercorp",
+    logo: "/clients/intercorp-logo.svg",
+    href: "https://intercorpdevelopments.com.au/",
+  },
+];

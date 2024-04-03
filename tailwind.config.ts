@@ -24,6 +24,19 @@ const config: Config = {
         margarita: ["Margarita", "sans-serif"],
       },
       maxWidth: { page: "1200px" },
+      animation: {
+        "infinite-scrolling": "infinite-scrolling 30s linear infinite",
+      },
+      keyframes: {
+        "infinite-scrolling": {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-50%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

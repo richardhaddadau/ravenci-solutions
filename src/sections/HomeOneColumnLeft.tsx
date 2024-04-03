@@ -50,35 +50,42 @@ const HomeOneColumnLeft = ({
   return (
     <section
       id={`find-out-more`}
-      className={`relative w-full max-w-page bg-ravenci-light-gray`}
+      className={`relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full bg-ravenci-light-gray`}
     >
+      <article className={`hidden md:block`}></article>
       <article
-        className={`relative py-36 flex justify-start md:justify-center w-full max-w-none md:max-w-lg h-full`}
+        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg h-full border-x-[1px] border-ravenci-gray/60`}
       >
-        <div
-          className={`relative px-4 sm:px-10 md:px-0 flex flex-col items-start w-full max-w-sm h-full`}
+        <h3
+          className={`self-start mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
         >
-          <h3
-            className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
-          >
-            {MDXTagline && <MDXTagline />}
-          </h3>
-          <h2 className={`font-poppins font-semibold text-4xl tracking-tight`}>
-            {title}
-          </h2>
-          <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
-          <Link
-            href={ctaLink}
-            title={ctaTitle}
-            className={`mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
-          >
-            {ctaText}
-          </Link>
-        </div>
+          {MDXTagline && <MDXTagline />}
+        </h3>
+        <h2
+          className={`self-start font-poppins font-semibold text-4xl tracking-tight`}
+        >
+          {title}
+        </h2>
+        <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
+        <Link
+          href={ctaLink}
+          title={ctaTitle}
+          className={`mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
+        >
+          {ctaText}
+        </Link>
         <div
           className={`absolute bottom-0 w-full h-1.5 bg-ravenci-primary`}
         ></div>
       </article>
+
+      <article
+        className={`hidden md:block grid place-content-center`}
+      ></article>
+      <article
+        className={`hidden md:block h-full border-x-[1px] border-ravenci-gray/60`}
+      ></article>
+      <article className={`hidden xl:block`}></article>
 
       <Image
         className={`absolute bottom-2 md:-bottom-3 lg:-bottom-1 right-2 scale-50 sm:scale-75 lg:scale-100`}

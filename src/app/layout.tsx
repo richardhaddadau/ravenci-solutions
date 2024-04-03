@@ -1,9 +1,10 @@
 import "./globals.css";
 
-import MainNavigation from "@/components/MainNavigation";
+import React from "react";
 import Head from "next/head";
-import Footer from "@/sections/Footer";
 
+import Footer from "@/sections/Footer";
+import MainNavigation from "@/components/MainNavigation";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({

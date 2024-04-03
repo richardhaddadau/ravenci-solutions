@@ -5,8 +5,6 @@ type Testimonial = {
 };
 
 const TestimonialCarousel = (testimonial: Testimonial) => {
-  console.log(testimonial.author.split(" "));
-
   return (
     <section className={`pt-20 pb-16 w-full bg-ravenci-primary`}>
       <article className={`mx-auto max-w-md text-center`}>

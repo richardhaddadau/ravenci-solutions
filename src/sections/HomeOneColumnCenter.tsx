@@ -47,34 +47,38 @@ const HomeOneColumnCenter = ({
   const MDXContent = ContentComponent[content];
 
   return (
-    <section className={`w-full max-w-page bg-ravenci-light-gray`}>
+    <section className={`grid grid-cols-2 lg:grid-cols-4 w-full max-w-page`}>
       <article
-        className={`relative py-36 mx-auto flex justify-center w-full max-w-xl h-full`}
+        className={`hidden md:block h-full border-l-[1px] border-ravenci-gray/60`}
+      ></article>
+
+      <article
+        className={`relative mx-auto px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center text-center max-w-xl lg:max-w-none h-full border-x-[1px] border-ravenci-gray/60`}
       >
-        <div
-          className={`relative flex flex-col items-center w-full h-full text-center`}
+        <h3
+          className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
         >
-          <h3
-            className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
-          >
-            {MDXTagline && <MDXTagline />}
-          </h3>
-          <h2 className={`font-poppins font-semibold text-4xl tracking-tight`}>
-            {title}
-          </h2>
-          <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
-          <Link
-            href={ctaLink}
-            title={ctaTitle}
-            className={`self-center mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
-          >
-            {ctaText}
-          </Link>
-        </div>
+          {MDXTagline && <MDXTagline />}
+        </h3>
+        <h2 className={`font-poppins font-semibold text-4xl tracking-tight`}>
+          {title}
+        </h2>
+        <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
+        <Link
+          href={ctaLink}
+          title={ctaTitle}
+          className={`self-center mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
+        >
+          {ctaText}
+        </Link>
         <div
-          className={`absolute bottom-0 w-full h-1.5 bg-ravenci-primary`}
+          className={`absolute left-0 bottom-0 w-full h-1.5 bg-ravenci-primary`}
         ></div>
       </article>
+
+      <article
+        className={`hidden md:block h-full border-r-[1px] border-ravenci-gray/60`}
+      ></article>
     </section>
   );
 };
