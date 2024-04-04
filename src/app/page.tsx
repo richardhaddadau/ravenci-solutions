@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-ravenci-light-gray">
+    <main className="mb-[36rem] sm:mb-[32rem] flex min-h-screen flex-col items-center bg-ravenci-light-gray">
       <HomeHero />
 
       {/* Client Logos */}
@@ -49,6 +49,7 @@ export default function Home() {
         headingColour={`text-neutral-800`}
         headingSide={`bottom`}
         theme={`bg-ravenci-gray`}
+        speed={`normal`}
       />
 
       <HomeOneColumnLeft
@@ -72,7 +73,7 @@ export default function Home() {
       />
 
       {/* Technologies I Use */}
-      <LogosPanel />
+      <LogosPanel speed={`slow`} />
 
       <TestimonialSingles
         content={

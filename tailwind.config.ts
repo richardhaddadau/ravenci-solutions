@@ -25,7 +25,9 @@ const config: Config = {
       },
       maxWidth: { page: "1200px" },
       animation: {
-        "infinite-scrolling": "infinite-scrolling 30s linear infinite",
+        "infinite-scrolling-slow": "infinite-scrolling 40s linear infinite",
+        "infinite-scrolling-normal": "infinite-scrolling 30s linear infinite",
+        "infinite-scrolling-fast": "infinite-scrolling 20s linear infinite",
       },
       keyframes: {
         "infinite-scrolling": {

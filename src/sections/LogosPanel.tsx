@@ -85,6 +85,7 @@ interface LogosPanelProps {
   headingColour?: string;
   theme?: string;
   headingSide?: "top" | "bottom";
+  speed?: "slow" | "normal" | "fast";
   animated?: boolean;
   scrollable?: boolean;
 }
@@ -95,10 +96,17 @@ export default function LogosPanel({
   headingColour = "text-white",
   headingSide = "top",
   theme = "bg-ravenci-primary",
+  speed = "normal",
   animated = true,
   scrollable = false,
 }) {
   const [infiniteLogos, setInfiniteLogos] = useState([...logos, ...logos]);
+
+  const speedLookup: { [key: string]: string } = {
+    slow: "animate-infinite-scrolling-slow",
+    normal: "animate-infinite-scrolling-normal",
+    fast: "animate-infinite-scrolling-fast",
+  };
 
   return (
     <section className={`w-full z-10`}>
@@ -129,7 +137,8 @@ export default function LogosPanel({
         <div
           className={`w-max ${
             animated &&
-            "animate-infinite-scrolling [animation-play-state:running] hover:[animation-play-state:paused]"
+            speedLookup[speed] +
+              " [animation-play-state:running] hover:[animation-play-state:paused]"
           }`}
         >
           {infiniteLogos.map(({ title, logo, href }, index) => (

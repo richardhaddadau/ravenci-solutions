@@ -71,7 +71,7 @@ const MainNavigation = (props: MainNavigationProps) => {
         ></div>
 
         {/* Logo */}
-        <section className={`flex items-center gap-1 bg-white z-10`}>
+        <Link href={`/`} className={`flex items-center gap-1 bg-white z-10`}>
           <Image
             src={`logo.svg`}
             alt={`Welcome to RAVENCI`}
@@ -79,7 +79,7 @@ const MainNavigation = (props: MainNavigationProps) => {
             height={25}
             priority
           />
-        </section>
+        </Link>
 
         {/* navigation */}
         <section className={`flex items-center`}>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="flex flex-col items-center bg-ravenci-light-gray">
+    <main className="mb-[36rem] sm:mb-[32rem] flex flex-col items-center bg-ravenci-light-gray">
       <section
         className={`pt-40 pb-20 px-4 flex flex-col justify-center items-center w-full min-h-[450px] bg-ravenci-primary`}
       >
@@ -40,6 +40,10 @@ export default function ContactPage() {
           Let's work together
         </h1>
       </section>
+
+      <section
+        className={`pt-40 pb-20 px-4 flex flex-col justify-center items-center w-full min-h-[450px] bg-ravenci-light-gray`}
+      ></section>
     </main>
   );
 }
