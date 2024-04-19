@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import homeScalableTagline from "@/app/(mdx)/homeScalableTagline.mdx";
 import homeScalableContent from "@/app/(mdx)/homeScalableContent.mdx";
+import { Route } from "next";
 
 const ContentBlock = styled.div`
   margin-top: 2rem;
@@ -71,7 +72,7 @@ const HomeOneColumnRight = ({
         </h2>
         <ContentBlock>{MDXContent && <MDXContent />}</ContentBlock>
         <Link
-          href={ctaLink}
+          href={ctaLink as Route}
           title={ctaTitle}
           className={`self-end mt-8 py-3 px-8 bg-ravenci hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-ravenci-dark-gray font-poppins text-xs text-ravenci-light-gray uppercase transition-all duration-[0.4s]`}
         >

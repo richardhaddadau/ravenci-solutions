@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="mb-[36rem] sm:mb-[32rem] flex min-h-screen flex-col items-center bg-ravenci-light-gray">
+    <main className="flex min-h-screen flex-col items-center bg-ravenci-light-gray">
       <HomeHero />
 
       {/* Client Logos */}
@@ -56,7 +56,7 @@ export default function Home() {
         tagline={`stable`}
         title={`Good development isn't fragile`}
         content={`stable`}
-        ctaLink={``}
+        ctaLink={`/about-us`}
         ctaText={`Here's why we are confident`}
         ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
       />
@@ -67,7 +67,7 @@ export default function Home() {
         tagline={`reliable`}
         title={`Expert developers build for the future, today`}
         content={`reliable`}
-        ctaLink={``}
+        ctaLink={`/start-a-project`}
         ctaText={`Start a New Project`}
         ctaTitle={`Develop with RAVENCI, today`}
       />
@@ -87,7 +87,7 @@ export default function Home() {
         tagline={`reliable`}
         title={`Technology changes often but change rarely offers reliability`}
         content={`reliable`}
-        ctaLink={``}
+        ctaLink={`/packages/maintenance`}
         ctaText={`Maintenance Packages`}
         ctaTitle={`Maintenance Packages and Prices`}
       />

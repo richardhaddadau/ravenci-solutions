@@ -1,9 +1,10 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
+import { Route } from "next";
 
 const Footer = () => {
   return (
-    <footer className={`fixed bottom-0 left-0 right-0 -z-10`}>
+    <footer>
       <div className={`pt-10 w-full`}>
         <Image
           src={`raven-on-rock.svg`}
@@ -22,7 +23,7 @@ const Footer = () => {
           </p>
           <p className={`font-poppins text-ravenci-light-gray text-center`}>
             <Link
-              href={"/contact"}
+              href={`/start-a-project` as Route}
               className={`pb-1 inline-block opacity-70 hover:opacity-100 font-bold text-3xl border-b-[1.5px] border-ravenci-gray hover:border-ravenci-primary transition-all duration-500`}
             >
               get in touch
@@ -32,7 +33,8 @@ const Footer = () => {
         <p
           className={`font-poppins text-ravenci-dark-gray text-xs font-light text-center`}
         >
-          &copy; 2018 - {new Date().getFullYear()} RAVENCI
+          &copy; 2018 - {new Date().getFullYear()} 1VINE Design (Operating as{" "}
+          <span className={`font-bold`}>RAVENCI</span>)
         </p>
       </section>
     </footer>

@@ -30,6 +30,16 @@ const TECH_LOGOS = [
     href: "https://bigcommerce.com/",
   },
   {
+    title: "GitHub",
+    logo: "/tech/tech-logos-github.svg",
+    href: "https://github.com/",
+  },
+  {
+    title: "Postman",
+    logo: "/tech/tech-logos-postman.svg",
+    href: "https://postman.com/",
+  },
+  {
     title: "NodeJS",
     logo: "/tech/tech-logos-nodejs.svg",
     href: "https://nodejs.org/",
@@ -43,6 +53,16 @@ const TECH_LOGOS = [
     title: "Digital Ocean",
     logo: "/tech/tech-logos-digital-ocean.svg",
     href: "https://digitalocean.com/",
+  },
+  {
+    title: "Netlify",
+    logo: "/tech/tech-logos-netlify.svg",
+    href: "https://netlify.com/",
+  },
+  {
+    title: "Prisma",
+    logo: "/tech/tech-logos-prisma.svg",
+    href: "https://prisma.io/",
   },
   {
     title: "Laravel",

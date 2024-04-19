@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Route } from "next";
 
 type Step = {
   number: number;
@@ -99,7 +100,7 @@ const HomeStepsSection = () => {
         ))}
       </section>
       <Link
-        href="/contact"
+        href={`/start-a-project` as Route}
         className={`mt-20 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}
       >
         Start a Project
