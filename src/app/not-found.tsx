@@ -1,3 +1,5 @@
-export default function NotFound() {
+"use server";
+
+export default async function NotFound() {
   return <div>Not Found</div>;
 }

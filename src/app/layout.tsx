@@ -3,8 +3,9 @@ import "./globals.css";
 import React from "react";
 import Head from "next/head";
 
-import Footer from "@/sections/Footer";
 import MainNavigation from "@/components/MainNavigation";
+import Footer from "@/sections/Footer";
+
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({
@@ -14,16 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          type="module"
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-          noModule
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        ></script>
-
+      <Head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -42,7 +34,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-      </head>
+      </Head>
 
       <body className={`bg-white text-ravenci`}>
         <MainNavigation

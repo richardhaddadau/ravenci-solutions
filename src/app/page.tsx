@@ -9,6 +9,20 @@ import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
 import TestimonialSingles from "@/sections/TestimonialSingles";
 import LogosPanel from "@/sections/LogosPanel";
 
+// export async function generateMetadata(): Promise<Metadata> {
+//   const client = createClient();
+//   const home = await client.getByUID("page", "home");
+//
+//   return {
+//     title: prismic.asText(home.data.title),
+//     description: home.data.meta_description,
+//     openGraph: {
+//       title: home.data.meta_title ?? undefined,
+//       images: [{ url: home.data.meta_image.url ?? "" }],
+//     },
+//   };
+// }
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),
   title: "RAVENCI: Website and App Development | Brisbane, Australia",
@@ -56,7 +70,7 @@ export default function Home() {
         tagline={`stable`}
         title={`Good development isn't fragile`}
         content={`stable`}
-        ctaLink={`/about-us`}
+        ctaLink={`/about`}
         ctaText={`Here's why we are confident`}
         ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
       />
