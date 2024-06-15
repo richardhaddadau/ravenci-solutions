@@ -1,11 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { TfiLayoutGrid2Alt } from "react-icons/tfi";
 
 interface MainNavigationProps {
