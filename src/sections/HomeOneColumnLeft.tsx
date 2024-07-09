@@ -52,9 +52,13 @@ const HomeOneColumnLeft = ({
       id={`find-out-more`}
       className={`relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full bg-ravenci-light-gray`}
     >
-      <article className={`hidden md:block`}></article>
+      <article className={`relative hidden md:block`}>
+        <div
+          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
+        ></div>
+      </article>
       <article
-        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg h-full border-x-[1px] border-ravenci-gray/60`}
+        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <h3
           className={`self-start mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
@@ -79,12 +83,18 @@ const HomeOneColumnLeft = ({
         ></div>
       </article>
 
+      <article className={`relative hidden md:grid place-content-center`}>
+        <div
+          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
+        ></div>
+      </article>
       <article
-        className={`hidden md:block grid place-content-center`}
-      ></article>
-      <article
-        className={`hidden md:block h-full border-x-[1px] border-ravenci-gray/60`}
-      ></article>
+        className={`relative hidden md:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
+      >
+        <div
+          className={`absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
+        ></div>
+      </article>
       <article className={`hidden xl:block`}></article>
 
       <Image

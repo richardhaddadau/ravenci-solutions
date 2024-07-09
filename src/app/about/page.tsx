@@ -40,7 +40,11 @@ export default function AboutPage() {
       <WeightedImage />
       <AboutOneColumnCenter />
       <AboutClients />
-      <AboutOneColumnLeft />
+      <AboutOneColumnLeft
+        title={`Who are we`}
+        tagline={"from 1VINE to RAVENCI"}
+        content={``}
+      />
     </main>
   );
 }

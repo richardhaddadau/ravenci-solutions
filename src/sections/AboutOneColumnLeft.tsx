@@ -35,6 +35,9 @@ export default function AboutOneColumnLeft({
       <article
         className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg h-full`}
       >
+        <h3 className={`self-start font-poppins font-light opacity-50`}>
+          {tagline}
+        </h3>
         <h2
           className={`self-start font-poppins font-semibold text-4xl tracking-tight`}
         >

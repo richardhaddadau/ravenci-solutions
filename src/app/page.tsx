@@ -9,20 +9,6 @@ import HomeOneColumnRight from "@/sections/HomeOneColumnRight";
 import TestimonialSingles from "@/sections/TestimonialSingles";
 import LogosPanel from "@/sections/LogosPanel";
 
-// export async function generateMetadata(): Promise<Metadata> {
-//   const client = createClient();
-//   const home = await client.getByUID("page", "home");
-//
-//   return {
-//     title: prismic.asText(home.data.title),
-//     description: home.data.meta_description,
-//     openGraph: {
-//       title: home.data.meta_title ?? undefined,
-//       images: [{ url: home.data.meta_image.url ?? "" }],
-//     },
-//   };
-// }
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions"),
   title: "RAVENCI: Website and App Development | Brisbane, Australia",
@@ -59,7 +45,7 @@ export default function Home() {
       {/* Client Logos */}
       <LogosPanel
         logos={CLIENT_LOGOS}
-        heading={`Some of my previous clients`}
+        heading={`Some of our previous clients`}
         headingColour={`text-neutral-800`}
         headingSide={`bottom`}
         theme={`bg-ravenci-gray`}
@@ -102,8 +88,8 @@ export default function Home() {
         title={`Technology changes often but change rarely offers reliability`}
         content={`reliable`}
         ctaLink={`/packages/maintenance`}
-        ctaText={`Maintenance Packages`}
-        ctaTitle={`Maintenance Packages and Prices`}
+        ctaText={`See Our Pricing`}
+        ctaTitle={`View all of our Packages and Prices`}
       />
     </main>
   );

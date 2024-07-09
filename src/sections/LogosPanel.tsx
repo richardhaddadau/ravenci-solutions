@@ -35,6 +35,11 @@ const TECH_LOGOS = [
     href: "https://github.com/",
   },
   {
+    title: "Typescript",
+    logo: "/tech/tech-logos-typescript.svg",
+    href: "https://www.typescriptlang.org/",
+  },
+  {
     title: "Postman",
     logo: "/tech/tech-logos-postman.svg",
     href: "https://postman.com/",
@@ -60,34 +65,54 @@ const TECH_LOGOS = [
     href: "https://netlify.com/",
   },
   {
-    title: "Prisma",
-    logo: "/tech/tech-logos-prisma.svg",
-    href: "https://prisma.io/",
+    title: "Go",
+    logo: "/tech/tech-logos-go.svg",
+    href: "https://go.dev/",
   },
-  {
-    title: "Laravel",
-    logo: "/tech/tech-logos-laravel.svg",
-    href: "https://laravel.com/",
-  },
+  // {
+  //   title: "Prisma",
+  //   logo: "/tech/tech-logos-prisma.svg",
+  //   href: "https://prisma.io/",
+  // },
+  // {
+  //   title: "Laravel",
+  //   logo: "/tech/tech-logos-laravel.svg",
+  //   href: "https://laravel.com/",
+  // },
   {
     title: "Python",
     logo: "/tech/tech-logos-python.svg",
     href: "https://python.org/",
   },
-  {
-    title: "Flutter",
-    logo: "/tech/tech-logos-flutter.svg",
-    href: "https://flutter.dev/",
-  },
-  {
-    title: "Kotlin",
-    logo: "/tech/tech-logos-kotlin.svg",
-    href: "https://kotlinlang.org/",
-  },
+  // {
+  //   title: "Flutter",
+  //   logo: "/tech/tech-logos-flutter.svg",
+  //   href: "https://flutter.dev/",
+  // },
+  // {
+  //   title: "Kotlin",
+  //   logo: "/tech/tech-logos-kotlin.svg",
+  //   href: "https://kotlinlang.org/",
+  // },
   {
     title: "Swift",
     logo: "/tech/tech-logos-swift.svg",
     href: "https://developer.apple.com/swift/",
+  },
+  {
+    title: "Unreal Engine",
+    logo: "/tech/tech-logos-unreal.svg",
+    href: "https://www.unrealengine.com/",
+  },
+  {
+    title: "Unity Engine",
+    logo: "/tech/tech-logos-unity.svg",
+    href: "https://unity.com/",
+  },
+  {
+    title: "Godot Engine",
+    logo: "/tech/tech-logos-godot.svg",
+    href: "https://godotengine.org/",
   },
 ];
 

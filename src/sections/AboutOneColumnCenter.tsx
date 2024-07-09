@@ -23,8 +23,8 @@
             based in beautiful Brisbane.
           </p>
           <p>
-            My commitment to maintaining all development work in-house is not
-            just a business strategy; it is a reflection of my dedication to
+            Our commitment to maintaining all development work in-house is not
+            just a business strategy; it is a reflection of our dedication to
             quality code and reliable results.
           </p>
         </article>
