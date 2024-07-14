@@ -24,9 +24,15 @@ const Footer = () => {
           <p className={`font-poppins text-ravenci-light-gray text-center`}>
             <Link
               href={`/start-a-project` as Route}
-              className={`pb-1 inline-block opacity-70 hover:opacity-100 font-bold text-3xl border-b-[1.5px] border-ravenci-gray hover:border-ravenci-primary transition-all duration-500`}
+              className={`group relative pb-1 inline-block opacity-70 hover:opacity-100 font-bold text-3xl transition-all duration-500`}
             >
-              get in touch
+              let's talk
+              <span
+                className={`absolute bottom-0 right-0 w-full group-hover:w-0 h-1.5 bg-white/70 group-hover:bg-white/100 z-0 transition-all duration-500 ease-in-out`}
+              ></span>
+              <span
+                className={`absolute bottom-0 left-0 w-0 group-hover:w-full h-1.5 bg-ravenci-primary z-10 transition-all duration-500 ease-in-out`}
+              ></span>
             </Link>
           </p>
         </div>

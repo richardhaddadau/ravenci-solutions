@@ -19,11 +19,11 @@ export default function RootLayout({
           pages={[
             { text: "Home", title: "RAVENCI", link: "/" },
             { text: "About", title: "More about RAVENCI", link: "/about" },
-            {
-              text: "Case Studies",
-              title: "Case Studies",
-              link: "/case-studies",
-            },
+            // {
+            //   text: "Case Studies",
+            //   title: "Case Studies",
+            //   link: "/case-studies",
+            // },
             {
               text: "Business Websites",
               title: "All of our services and packages",

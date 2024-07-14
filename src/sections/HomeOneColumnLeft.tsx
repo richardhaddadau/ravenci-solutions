@@ -54,8 +54,16 @@ const HomeOneColumnLeft = ({
     >
       <article className={`relative hidden md:block`}>
         <div
-          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
-        ></div>
+          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+        >
+          <Image
+            src={"/clients/prev_cadeaurable.jpg"}
+            className={`object-cover w-full`}
+            alt={"Cadeaurable on BigCommerce"}
+            width={1000}
+            height={1000}
+          />
+        </div>
       </article>
       <article
         className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60`}
@@ -85,15 +93,31 @@ const HomeOneColumnLeft = ({
 
       <article className={`relative hidden md:grid place-content-center`}>
         <div
-          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
-        ></div>
+          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+        >
+          <Image
+            src={"/clients/prev_sac-consulting.jpg"}
+            className={`object-cover w-full`}
+            alt={"SAC Consulting on Wordpress"}
+            width={1000}
+            height={1000}
+          />
+        </div>
       </article>
       <article
         className={`relative hidden md:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500`}
-        ></div>
+          className={`absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+        >
+          <Image
+            src={"/clients/prev_nikita-morell.jpg"}
+            className={`object-cover w-full`}
+            alt={"Nikita Morell on Wordpress"}
+            width={1000}
+            height={1000}
+          />
+        </div>
       </article>
       <article className={`hidden xl:block`}></article>
 
