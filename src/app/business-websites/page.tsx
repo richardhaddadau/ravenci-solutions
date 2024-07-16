@@ -16,33 +16,18 @@ export default function PackagesPage() {
         }}
       >
         <section
-          className={`pt-20 pb-10 px-4 mx-auto flex flex-col md:flex-row justify-center items-center w-full max-w-5xl min-h-[650px]`}
+          className={`pt-24 pb-10 px-4 mx-auto flex flex-col md:flex-row justify-center items-center gap-6 w-full max-w-5xl min-h-[650px]`}
         >
-          <article className="py-6 px-3 w-full h-full">
-            <div
-              className={
-                "py-32 mx-auto max-w-sm rounded-3xl bg-ravenci-gray/50 border border-ravenci-light-gray shadow-xl" +
-                " shadow-ravenci/80 hover:shadow-2xl hover:shadow-ravenci/50 hover:scale-105 hover:-translate-y-2 overflow-hidden transition-all duration-500 ease-in-out"
-              }
-              style={{
-                backdropFilter: `blur(2px)`,
-              }}
-            >
-              <h2
-                className={`mt-2 font-poppins font-normal text-sm lg:text-base text-center`}
-              >
-                Make it yours
-              </h2>
-              <h1
-                className={`font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center`}
-              >
-                Ready Made
-              </h1>
-            </div>
-          </article>
+          <PackageGlassButton
+            title={"Ready Made"}
+            subtitle={"Make it yours"}
+            href={"#ready-made"}
+            theme={"light"}
+          />
           <PackageGlassButton
             title={"Custom Built"}
             subtitle={"Uniquely yours"}
+            href={"#custom-built"}
           />
         </section>
 
@@ -75,7 +60,8 @@ export default function PackagesPage() {
       </div>
 
       <section
-        className={`relative py-20 px-4 flex flex-col justify-center items-center w-full`}
+        id={"ready-made"}
+        className={`relative py-20 px-4 flex flex-col justify-center items-center w-full text-sm lg:text-base`}
       >
         <article
           className={`flex flex-col items-start w-full max-w-5xl text-left`}
@@ -113,10 +99,10 @@ export default function PackagesPage() {
               We wanted to make the Ready Made path as straight forward and as
               easy to follow as possible. To get started,
             </p>
-            <ol className={`mt-2 list-decimal list-inside indent-4`}>
-              <li>Choose a template that best suits your needs</li>
-              <li>Select which pages and features you want to include</li>
-              <li>Pick the payment schedule that works best for you</li>
+            <ol className={`mt-2 list-decimal list-inside lg:indent-4`}>
+              <li>Choose a template</li>
+              <li>Select pages and features</li>
+              <li>Pick payment schedule</li>
             </ol>
             <p className={`mt-7`}>
               And that's it! You're ready to go. We'll handle the rest.
@@ -132,7 +118,8 @@ export default function PackagesPage() {
       </section>
 
       <section
-        className={`relative py-20 px-4 flex flex-col justify-center items-center w-full bg-ravenci`}
+        id={"custom-built"}
+        className={`relative py-20 px-4 flex flex-col justify-center items-center w-full bg-ravenci text-sm lg:text-base text-left lg:text-right`}
       >
         <div
           className={`absolute px-4 py-2 top-0 left-1/4 bg-ravenci-light-gray text-sm text-ravenci font-bold z-10`}
@@ -140,18 +127,16 @@ export default function PackagesPage() {
           Custom Built
         </div>
         <article
-          className={`flex flex-col items-end w-full max-w-5xl text-right text-ravenci-light-gray`}
+          className={`flex flex-col items-start lg:items-end w-full max-w-5xl text-ravenci-light-gray`}
         >
-          <h2
-            className={`mb-5 font-poppins font-bold text-sm lg:text-3xl text-right`}
-          >
+          <h2 className={`mb-5 font-poppins font-bold text-xl lg:text-3xl`}>
             Uniquely yours!
           </h2>
           <div className={`max-w-lg leading-7 opacity-60`}>
             <p>
               Our <strong>Custom Built path</strong> has been finely tuned to
               serve businesses looking for a unique and tailored solution to
-              their vision. If that sounds like what you are looking for, Read
+              their vision. If that sounds like what you are looking for, Read4
               on!
             </p>
             <p className={`mt-7`}>
@@ -162,7 +147,9 @@ export default function PackagesPage() {
             </p>
           </div>
 
-          <h3 className={`mt-10 mb-5 font-poppins font-bold text-xl`}>
+          <h3
+            className={`mt-10 mb-5 font-poppins font-bold text-lg lg:text-xl`}
+          >
             What do I need to do?
           </h3>
           <div className={`max-w-lg leading-7 opacity-60`}>
@@ -171,18 +158,11 @@ export default function PackagesPage() {
               the Ready Made path because it is very personalised to your needs.
               To get started:
             </p>
-            <ol className={`mt-2 list-decimal list-inside indent-4`}>
-              <li>
-                Choose a design option (bring your own or RAVENCI to create)
-              </li>
-              <li>
-                Select which pages, features and addons you would like to
-                include
-              </li>
-              <li>
-                Nominate a first consultation time and a preferred delivery date
-              </li>
-              <li>Pick a payment schedule that works best for you</li>
+            <ol className={`mt-2 list-decimal list-inside lg:indent-4`}>
+              <li>Choose a design option</li>
+              <li>Select pages, features & addons</li>
+              <li>Book first consultation</li>
+              <li>Pick payment schedule</li>
             </ol>
             <p className={`mt-7`}>
               Our smart forms will guide you through the entire process and,
