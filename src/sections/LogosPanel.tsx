@@ -60,6 +60,11 @@ const TECH_LOGOS = [
     href: "https://digitalocean.com/",
   },
   {
+    title: "Vercel",
+    logo: "/tech/tech-logos-vercel.svg",
+    href: "https://vercel.com/",
+  },
+  {
     title: "Netlify",
     logo: "/tech/tech-logos-netlify.svg",
     href: "https://netlify.com/",

@@ -56,8 +56,8 @@ export default function Home() {
         tagline={`stable`}
         title={`Good development isn't fragile`}
         content={`stable`}
-        ctaLink={`/about`}
-        ctaText={`Here's why we are confident`}
+        ctaLink={`/our-promise`}
+        ctaText={`Our Promise`}
         ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
       />
 
@@ -67,8 +67,8 @@ export default function Home() {
         tagline={`reliable`}
         title={`Expert developers build for the future, today`}
         content={`reliable`}
-        ctaLink={`/start-a-project`}
-        ctaText={`Start a New Project`}
+        ctaLink={`/about`}
+        ctaText={`Learn more about us`}
         ctaTitle={`Develop with RAVENCI, today`}
       />
 
@@ -87,8 +87,8 @@ export default function Home() {
         tagline={`reliable`}
         title={`Technology changes often but change rarely offers reliability`}
         content={`reliable`}
-        ctaLink={`/packages/maintenance`}
-        ctaText={`See Our Pricing`}
+        ctaLink={`/packages`}
+        ctaText={`See Our Packages`}
         ctaTitle={`View all of our Packages and Prices`}
       />
     </main>

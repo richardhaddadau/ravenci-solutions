@@ -136,7 +136,7 @@ export default function PackagesPage() {
             <p>
               Our <strong>Custom Built path</strong> has been finely tuned to
               serve businesses looking for a unique and tailored solution to
-              their vision. If that sounds like what you are looking for, Read4
+              their vision. If that sounds like what you are looking for, read
               on!
             </p>
             <p className={`mt-7`}>

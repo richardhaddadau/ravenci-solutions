@@ -16,7 +16,7 @@ export default function Packages({
   featuredPackage = 0,
 }) {
   return (
-    <section className={`grid grid-cols-3 w-full max-w-5xl`}>
+    <div>
       {packages.map(({ title, subtitle, price, features, link }, index) => (
         <article
           key={`package-price-${index}`}
@@ -48,7 +48,8 @@ export default function Packages({
           </ul>
         </article>
       ))}
-    </section>
+      <article className={`col-span-2`}></article>
+    </div>
   );
 }
 

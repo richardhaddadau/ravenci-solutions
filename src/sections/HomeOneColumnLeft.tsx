@@ -5,6 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import homeStableTagline from "@/app/(mdx)/homeStableTagline.mdx";
 import homeStableContent from "@/app/(mdx)/homeStableContent.mdx";
+import {
+  TbBallpen,
+  TbGift,
+  TbLink,
+  TbWoman,
+  TbWomanFilled,
+} from "react-icons/tb";
 
 const ContentBlock = styled.div`
   margin-top: 2rem;
@@ -54,7 +61,7 @@ const HomeOneColumnLeft = ({
     >
       <article className={`relative hidden md:block`}>
         <div
-          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_cadeaurable.jpg"}
@@ -63,6 +70,20 @@ const HomeOneColumnLeft = ({
             width={1000}
             height={1000}
           />
+
+          <span
+            className={`p-2 absolute top-1/2 -translate-y-1/2 left-0 right-0 bg-ravenci-primary text-xs text-white uppercase opacity-0 group-hover:opacity-100 transition-all delay-200 duration-500 ease-in-out z-20`}
+          >
+            <Link
+              className={`flex gap-2 justify-center items-center tracking-wider`}
+              href={"https://cadeaurable.com.au/"}
+              title={"Cadeaurable"}
+              target={"_blank"}
+            >
+              <TbGift size={18} />
+              Cadeaurable
+            </Link>
+          </span>
         </div>
       </article>
       <article
@@ -93,30 +114,59 @@ const HomeOneColumnLeft = ({
 
       <article className={`relative hidden md:grid place-content-center`}>
         <div
-          className={`absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_sac-consulting.jpg"}
             className={`object-cover w-full`}
-            alt={"SAC Consulting on Wordpress"}
+            alt={"SAC Consulting on WordPress"}
             width={1000}
             height={1000}
           />
+
+          <span
+            className={`p-2 absolute top-1/2 -translate-y-1/2 left-0 right-0 bg-ravenci-primary text-xs text-white uppercase opacity-0 group-hover:opacity-100 transition-all delay-200 duration-500 ease-in-out z-20`}
+          >
+            <Link
+              className={`flex gap-2 justify-center items-center tracking-wider`}
+              href={"https://sacconsulting.com.au/"}
+              title={"SAC Consulting"}
+              target={"_blank"}
+            >
+              <TbWomanFilled size={18} />
+              SAC Consulting
+            </Link>
+          </span>
         </div>
       </article>
+
       <article
         className={`relative hidden md:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_nikita-morell.jpg"}
             className={`object-cover w-full`}
-            alt={"Nikita Morell on Wordpress"}
+            alt={"Nikita Morell on WordPress"}
             width={1000}
             height={1000}
           />
+
+          <span
+            className={`p-2 absolute top-1/2 -translate-y-1/2 left-0 right-0 bg-ravenci-primary text-xs text-white uppercase opacity-0 group-hover:opacity-100 transition-all delay-200 duration-500 ease-in-out z-20`}
+          >
+            <Link
+              className={`flex gap-2 justify-center items-center tracking-wider`}
+              href={"https://nikitamorell.com/"}
+              title={"Nikita Morell"}
+              target={"_blank"}
+            >
+              <TbBallpen size={18} />
+              Nikita Morell
+            </Link>
+          </span>
         </div>
       </article>
       <article className={`hidden xl:block`}></article>

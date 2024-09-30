@@ -1,7 +1,8 @@
 ﻿"use client";
 
-import Image from "next/image";
 import styled from "styled-components";
+
+import aboutWhoAreWeContent from "@/app/(mdx)/aboutWhoAreWeContent.mdx";
 
 const ContentBlock = styled.div`
   margin-top: 2rem;
@@ -11,6 +12,7 @@ const ContentBlock = styled.div`
     margin-bottom: 1.25rem;
 
     font-size: 0.875rem;
+    font-weight: 300;
     line-height: 1.5rem;
     text-align: left;
   }
@@ -27,13 +29,19 @@ export default function AboutOneColumnLeft({
   title = "main title",
   content = "a couple of words",
 }: HomeOneColumnLeftProps) {
+  const ContentComponent: { [key: string]: any } = {
+    whoWeAre: aboutWhoAreWeContent,
+  };
+
+  const MDXContent = ContentComponent[content];
+
   return (
     <section
-      className={`relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full bg-ravenci-primary text-ravenci-light-gray`}
+      className={`relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full bg-ravenci text-ravenci-light-gray`}
     >
       <article className={`hidden md:block`}></article>
       <article
-        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full max-w-none md:max-w-lg h-full`}
+        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-center w-full h-full bg-ravenci`}
       >
         <h3 className={`self-start font-poppins font-light opacity-50`}>
           {tagline}
@@ -43,13 +51,13 @@ export default function AboutOneColumnLeft({
         >
           {title}
         </h2>
-        <ContentBlock className={`text-ravenci-light-gray/80`}>
-          {content}
+        <ContentBlock className={`font-poppins text-ravenci-light-gray`}>
+          {MDXContent && <MDXContent />}
         </ContentBlock>
       </article>
 
-      <article className={`hidden md:grid place-content-center`}></article>
-      <article className={`hidden md:block h-full`}></article>
+      <article className={`hidden md:block`}></article>
+      <article className={`hidden lg:block`}></article>
       <article className={`hidden xl:block`}></article>
     </section>
   );
