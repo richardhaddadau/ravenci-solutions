@@ -8,6 +8,14 @@ const ContentBlock = styled.div`
   margin-top: 2rem;
   width: 100%;
 
+  h3 {
+    margin-top: 2.5rem;
+
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+  }
+
   p {
     margin-bottom: 1.25rem;
 

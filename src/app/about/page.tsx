@@ -4,7 +4,7 @@ import WeightedImage from "@/components/WeightedImage";
 import AboutOneColumnCenter from "@/sections/AboutOneColumnCenter";
 import { Metadata } from "next";
 import AboutOneColumnLeft from "@/sections/AboutOneColumnLeft";
-import AboutWorkWithUs from "@/sections/AboutWorkWithUs";
+import AboutCollaborate from "@/sections/AboutCollaborate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ravenci.solutions/about"),
@@ -46,7 +46,7 @@ export default function AboutPage() {
         tagline={"from 1VINE to RAVENCI"}
         content={`whoWeAre`}
       />
-      <AboutWorkWithUs />
+      <AboutCollaborate />
     </main>
   );
 }
