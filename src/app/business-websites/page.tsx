@@ -40,21 +40,26 @@ export default function PackagesPage() {
           <h2
             className={`mt-2 font-poppins text-lg lg:text-4xl font-bold text-center text-ravenci-light-gray`}
           >
-            Our Solutions. Your way!
+            My Solutions. Your way!
           </h2>
           <p
             className={`mt-5 w-full max-w-xl font-poppins font-light text-sm lg:text-base text-center text-ravenci-light-gray/75`}
           >
             Businesses are unique and each journey is different. This is what
-            led us, at RAVENCI, to chart these two paths for business website
-            solutions.
+            drove me to chart these two paths for business website solutions.
           </p>
           <p
             className={`mt-5 w-full max-w-xl font-poppins font-light text-sm lg:text-base text-center text-ravenci-light-gray/75`}
           >
-            our Ready Made solutions and Custom Built packages are not of equal
-            quality. Both solutions paths are focused on responsiveness,
-            performance, speed, quality, SEO, and user experience.
+            Regardless of which route you take, the Ready Made solutions and the
+            Custom Built packages are of equal quality. Both paths are focused
+            on responsiveness, performance, speed, quality, SEO, and user
+            experience.
+          </p>
+          <p
+            className={`mt-5 w-full max-w-xl font-poppins font-light text-sm lg:text-base text-center text-ravenci-light-gray/75`}
+          >
+            Read on to find out how they differ.
           </p>
         </section>
       </div>
@@ -78,16 +83,16 @@ export default function PackagesPage() {
           </h2>
           <div className={`max-w-xl leading-7 opacity-60`}>
             <p>
-              Our <strong>Ready Made path</strong> is the quickest and more
-              affordable way to create a business website. It is a great option
-              for small businesses and startups who want to establish a digital
-              footprint but don't have, or don't want to spend, the budget for a
-              custom designed and developed website.
+              The <strong>RAVENCI Ready Made Path</strong> is the quickest and
+              more affordable way to create a business website. It's a great
+              option for small businesses and startups who want to establish a
+              digital footprint but don't have, or don't want to spend, the
+              budget for a custom designed and developed website.
             </p>
             <p className={`mt-7`}>
-              This is precisely why we have created these two different paths to
-              help you get on your feet and lead your customers to your very own
-              website.
+              This is precisely why I've created these two different paths to
+              help you get on your feet quickly and start leading your customers
+              to your very own website.
             </p>
           </div>
 
@@ -96,8 +101,8 @@ export default function PackagesPage() {
           </h3>
           <div className={`max-w-xl leading-7 opacity-60`}>
             <p>
-              We wanted to make the Ready Made path as straight forward and as
-              easy to follow as possible. To get started,
+              To make the Ready Made path as straight forward and as easy to
+              follow as possible, here's how you can get started:
             </p>
             <ol className={`mt-2 list-decimal list-inside lg:indent-4`}>
               <li>Choose a template</li>
@@ -110,9 +115,9 @@ export default function PackagesPage() {
           </div>
           <Link
             href={"/ready-made-website" as Route}
-            className={`mt-10 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}
+            className={`mt-10 py-3 px-2 sm:px-8 bg-ravenci-primary w-full sm:w-auto text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs text-center uppercase transition-all duration-500`}
           >
-            Find out more details
+            Browse Templates
           </Link>
         </article>
       </section>
@@ -132,18 +137,18 @@ export default function PackagesPage() {
           <h2 className={`mb-5 font-poppins font-bold text-xl lg:text-3xl`}>
             Uniquely yours!
           </h2>
-          <div className={`max-w-lg leading-7 opacity-60`}>
+          <div className={`max-w-md leading-7 opacity-60`}>
             <p>
-              Our <strong>Custom Built path</strong> has been finely tuned to
-              serve businesses looking for a unique and tailored solution to
+              The <strong>RAVENCI Custom Built Path</strong> is finely tuned to
+              serve businesses looking for a more unique solution tailored to
               their vision. If that sounds like what you are looking for, read
               on!
             </p>
             <p className={`mt-7`}>
-              Whether you are bringing your own design or want RAVENCI to create
-              a masterpiece for you, we want to help. We take the design that
-              you have fallen in love with and turn it into a unique, working,
-              responsive, performant, SEO optimized website.
+              Whether you are bringing your own design or want me to create one
+              for you, I can help. I take the design you have fallen in love
+              with and turn it into a unique, interactive, responsive,
+              performant, Search Engine Optimized website.
             </p>
           </div>
 
@@ -152,11 +157,11 @@ export default function PackagesPage() {
           >
             What do I need to do?
           </h3>
-          <div className={`max-w-lg leading-7 opacity-60`}>
+          <div className={`max-w-md leading-7 opacity-60`}>
             <p>
               As you can imagine, this path is a little bit more involved than
               the Ready Made path because it is very personalised to your needs.
-              To get started:
+              So, to get started:
             </p>
             <ol className={`mt-2 list-decimal list-inside lg:indent-4`}>
               <li>Choose a design option</li>
@@ -174,7 +179,7 @@ export default function PackagesPage() {
             href={"/custom-built-website" as Route}
             className={`mt-10 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 font-poppins text-xs uppercase transition-all duration-500`}
           >
-            Get Started!
+            Let's Get Started!
           </Link>
         </article>
       </section>

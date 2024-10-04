@@ -46,14 +46,14 @@ export default function CustomMadeWebsitePage() {
             <div className={`mt-1 mb-5 w-36 h-2 bg-ravenci-light-gray`}></div>
             <div className={`max-w-xl leading-7 opacity-70`}>
               <p>
-                Our <strong>Ready Made path</strong> is the quickest and more
+                The <strong>Ready Made path</strong> is the quickest and more
                 affordable way to create a business website. It is a great
                 option for small businesses and startups who want to establish a
                 digital footprint but don't have, or don't want to spend, the
                 budget for a custom designed and developed website.
               </p>
               <p className={`mt-7`}>
-                This is precisely why we have created these two different paths
+                This is precisely why I have created these two different paths
                 to help you get on your feet and lead your customers to your
                 very own website.
               </p>
@@ -109,7 +109,7 @@ export default function CustomMadeWebsitePage() {
             <div className={`mt-1 mb-5 w-20 h-1 bg-ravenci-light-gray`}></div>
             <div className={`max-w-xl leading-7`}>
               <p className={`opacity-70`}>
-                We wanted to make the Ready Made path as straight forward and as
+                I wanted to make the Ready Made path as straight forward and as
                 easy to follow as possible. To get started,
               </p>
               <ol className={`mt-2 list-decimal list-inside lg:indent-4`}>
@@ -139,7 +139,7 @@ export default function CustomMadeWebsitePage() {
             <h3 className={`font-bold text-xl`}>What's in the Box?</h3>
             <div className={`mb-4 w-20 h-1 bg-ravenci/90`}></div>
             <p className={`font-light`}>
-              Every package in our Ready Made path includes:
+              Every package in the Ready Made path includes:
             </p>
             <ul className={`font-light list-disc list-inside`}>
               <li>Responsive Design</li>

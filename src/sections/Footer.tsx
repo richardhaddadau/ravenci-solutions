@@ -19,14 +19,14 @@ const Footer = () => {
           <p
             className={`mb-2 font-poppins text-ravenci-gray/60 font-light text-3xl text-center`}
           >
-            Want to work with me?
+            Are you ready to get started?
           </p>
           <p className={`font-poppins text-ravenci-light-gray text-center`}>
             <Link
               href={`/start-a-project` as Route}
               className={`group relative pb-1 inline-block opacity-70 hover:opacity-100 font-bold text-3xl transition-all duration-500`}
             >
-              let's talk
+              let's talk!
               <span
                 className={`absolute bottom-0 right-0 w-full group-hover:w-0 h-1.5 bg-white/70 group-hover:bg-white/100 z-0 transition-all duration-500 ease-in-out`}
               ></span>
