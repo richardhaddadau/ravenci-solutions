@@ -51,11 +51,9 @@ const HomeOneColumnCenter = ({
   const MDXContent = ContentComponent[content];
 
   return (
-    <section
-      className={`relative grid grid-cols-2 md:grid-cols-4 w-full max-w-page`}
-    >
+    <section className={`relative grid grid-cols-4 w-full max-w-page`}>
       <article
-        className={`relative hidden md:block h-full border-l-[1px] border-ravenci-gray/60`}
+        className={`relative hidden lg:block h-full border-l-[1px] border-ravenci-gray/60`}
       >
         <div
           className={`group absolute top-1/2 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
@@ -85,7 +83,7 @@ const HomeOneColumnCenter = ({
       </article>
 
       <article
-        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center text-center w-full max-w-none md:max-w-lg lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60`}
+        className={`relative mx-auto px-4 sm:px-10 py-36 col-span-4 lg:col-span-2 flex flex-col justify-start md:justify-center text-center w-full max-w-none md:max-w-lg lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <h3
           className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
@@ -109,7 +107,7 @@ const HomeOneColumnCenter = ({
       </article>
 
       <article
-        className={`relative hidden md:block h-full border-r-[1px] border-ravenci-gray/60`}
+        className={`relative hidden lg:block h-full border-r-[1px] border-ravenci-gray/60`}
       >
         <div
           className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
