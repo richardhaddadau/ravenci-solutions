@@ -91,7 +91,7 @@ const MainNavigation = (props: MainNavigationProps) => {
           <article
             className={`fixed lg:relative px-3 sm:px-6 lg:px-0 pb-2 pt-20 lg:p-0 ${
               navOpen ? "top-0 lg:right-auto" : "-top-full lg:right-auto"
-            } lg:top-auto right-0 w-full lg:max-w-full lg:h-auto bg-ravenci-light-gray lg:bg-transparent transition-all duration-500 -z-20 lg:z-0`}
+            } lg:top-auto right-0 flex flex-col lg:flex-row w-full lg:max-w-full lg:h-auto bg-ravenci-light-gray lg:bg-transparent transition-all duration-500 -z-20 lg:z-0`}
           >
             <ul className={`flex flex-col lg:flex-row items-stretch lg:gap-4`}>
               {props.pages.map((page, index) => (
@@ -100,13 +100,14 @@ const MainNavigation = (props: MainNavigationProps) => {
                   href={page.link}
                   title={page.title}
                   className={``}
+                  onClick={() => setNavOpen(false)}
                 >
                   <li
                     className={`group relative mb-5 lg:mb-0 p-4 px-8 pb-3 lg:py-1.5 lg:px-2 ${
                       page.link === pathname
                         ? "bg-ravenci-primary lg:bg-transparent font-bold"
-                        : "bg-transparent"
-                    } hover:bg-ravenci-primary/10 lg:hover:bg-transparent transition-all duration-500 overflow-hidden`}
+                        : "bg-transparent hover:bg-ravenci-primary/10"
+                    } lg:hover:bg-transparent transition-all duration-500 overflow-hidden`}
                   >
                     <span
                       className={`relative font-poppins text-base sm:text-sm lg:text-xs ${
@@ -124,6 +125,21 @@ const MainNavigation = (props: MainNavigationProps) => {
                 </Link>
               ))}
             </ul>
+
+            <Link
+              href={`/start-a-project`}
+              className={`p-4 px-8 mb-4 inline-flex lg:bg-ravenci-primary font-bold text-sm uppercase ${
+                pathname === `/start-a-project`
+                  ? "bg-ravenci-primary lg:bg-transparent font-bold text-white"
+                  : "bg-transparent hover:bg-ravenci-primary/10 text-ravenci-primary"
+              }`}
+              onClick={() => setNavOpen(false)}
+            >
+              <span>Start a Project</span>
+              <div
+                className={`absolute hidden lg:block bottom-0 right-full group-hover:right-0 w-full h-1 bg-ravenci-primary transition-all duration-500`}
+              ></div>
+            </Link>
           </article>
         </section>
       </nav>

@@ -38,7 +38,7 @@ export default function ContactPage() {
         <h1
           className={`font-poppins font-semibold text-xl sm:text-3xl md:text-4xl lg:text-5xl text-ravenci-light-gray text-center`}
         >
-          Let's work together
+          Get in touch
         </h1>
       </section>
 

@@ -52,13 +52,13 @@ const HomeOneColumnCenter = ({
 
   return (
     <section
-      className={`relative grid grid-cols-2 lg:grid-cols-4 w-full max-w-page`}
+      className={`relative grid grid-cols-2 md:grid-cols-4 w-full max-w-page`}
     >
       <article
         className={`relative hidden md:block h-full border-l-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`group absolute top-1/2 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-1/2 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_intercorp-developments.jpg"}
@@ -112,7 +112,7 @@ const HomeOneColumnCenter = ({
         className={`relative hidden md:block h-full border-r-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_vipertac.jpg"}

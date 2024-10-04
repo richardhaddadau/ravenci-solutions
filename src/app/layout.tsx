@@ -35,11 +35,11 @@ export default function RootLayout({
               link: "/apps-and-platforms",
             },
             {
-              text: "Free Resources",
+              text: "Resources",
               title: "Tools and Resources",
               link: "/resources",
             },
-            { text: "Contact", title: "Get in touch", link: "/contact" },
+            // { text: "Contact", title: "Get in touch", link: "/contact" },
           ]}
         />
         {children}

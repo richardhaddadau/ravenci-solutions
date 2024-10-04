@@ -56,8 +56,8 @@ export default function Home() {
         tagline={`stable`}
         title={`Good development isn't fragile`}
         content={`stable`}
-        ctaLink={`/my-promise`}
-        ctaText={`My Promise`}
+        ctaLink={`/the-ravenci-promise`}
+        ctaText={`The RAVENCI Promise`}
         ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
       />
 

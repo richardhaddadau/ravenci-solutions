@@ -53,13 +53,13 @@ const HomeOneColumnRight = ({
     <section
       className={`relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full bg-ravenci-light-gray`}
     >
-      <article className={`hidden md:grid`}></article>
+      <article className={`hidden xl:block`}></article>
 
       <article
         className={`relative hidden md:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_insight-medical-careers.jpg"}
@@ -85,9 +85,9 @@ const HomeOneColumnRight = ({
         </div>
       </article>
 
-      <article className={`relative hidden md:grid place-content-center`}>
+      <article className={`relative hidden lg:grid place-content-center`}>
         <div
-          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_beauty-retreat-bribie-island.jpg"}
@@ -116,7 +116,7 @@ const HomeOneColumnRight = ({
       </article>
 
       <article
-        className={`relative px-4 sm:px-10 py-36 col-span-2 flex flex-col justify-start md:justify-center items-end w-full max-w-none md:max-w-lg lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60 text-right`}
+        className={`relative px-4 sm:px-10 py-36 col-span-3 lg:col-span-2 flex flex-col justify-start md:justify-center items-end w-full max-w-none md:max-w-xl lg:max-w-full h-full border-x-[1px] border-ravenci-gray/60 text-right`}
       >
         <h3
           className={`mb-7 font-poppins font-medium text-sm tracking-wide text-ravenci-dark-gray uppercase`}
@@ -137,9 +137,9 @@ const HomeOneColumnRight = ({
         <div className={`absolute top-0 w-full h-1.5 bg-ravenci-primary`}></div>
       </article>
 
-      <article className={`relative hidden md:block`}>
+      <article className={`relative hidden lg:block`}>
         <div
-          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_auburn-friends.jpg"}

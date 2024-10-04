@@ -61,7 +61,7 @@ const HomeOneColumnLeft = ({
     >
       <article className={`relative hidden md:block`}>
         <div
-          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_cadeaurable.jpg"}
@@ -114,7 +114,7 @@ const HomeOneColumnLeft = ({
 
       <article className={`relative hidden md:grid place-content-center`}>
         <div
-          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-2/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_sac-consulting.jpg"}
@@ -141,10 +141,10 @@ const HomeOneColumnLeft = ({
       </article>
 
       <article
-        className={`relative hidden md:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
+        className={`relative hidden lg:block w-full h-full border-x-[1px] border-ravenci-gray/60`}
       >
         <div
-          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 bg-amber-500 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`group absolute top-1/3 -translate-y-1/2 w-full h-72 opacity-50 hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <Image
             src={"/clients/prev_nikita-morell.jpg"}
@@ -169,6 +169,7 @@ const HomeOneColumnLeft = ({
           </span>
         </div>
       </article>
+
       <article className={`hidden xl:block`}></article>
 
       <Image

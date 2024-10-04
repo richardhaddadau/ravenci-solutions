@@ -1,8 +1,15 @@
-﻿import Packages from "@/components/Packages";
-import { PackageGlassButton } from "@/components/PackageGlassButton";
+﻿import { Metadata, Route } from "next";
 import Link from "next/link";
-import { Route } from "next";
+
 import { ContactLink } from "@/components/ContactLink";
+import { PackageGlassButton } from "@/components/PackageGlassButton";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ravenci.solutions"),
+  title: "Business Websites - RAVENCI",
+  description:
+    "Innovative and expert solutions to a digital tomorrow - Ravenci is an Australian website and app development agency based in Brisbane, Queensland.",
+};
 
 export default function PackagesPage() {
   return (
