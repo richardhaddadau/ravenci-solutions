@@ -22,19 +22,15 @@ const HomeHero = () => {
       <p
         className={`mt-6 md:mt-10 max-w-sm md:max-w-xl text-sm sm:text-base text-center`}
       >
-        In over two decades of digital development, I haven't only studied the
-        best and most productive ways to build websites or develop apps. I have
-        also learnt, through my experience, the many things to look out for so
-        that your digital footprint remains stable, scalable and reliable long
-        after it goes live.
+        Full website coming soon.
       </p>
 
-      <Link
-        href="#find-out-more"
-        className={`mt-20 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}
-      >
-        Find out more
-      </Link>
+      {/*<Link*/}
+      {/*  href="#find-out-more"*/}
+      {/*  className={`mt-20 py-3 px-8 bg-ravenci-primary text-ravenci-light-gray hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-stone-300 font-poppins text-xs uppercase transition-all duration-500`}*/}
+      {/*>*/}
+      {/*  Find out more*/}
+      {/*</Link>*/}
     </section>
   );
 };

@@ -45,32 +45,32 @@ export default function Home() {
       {/* Client Logos */}
       <LogosPanel
         logos={CLIENT_LOGOS}
-        heading={`Some of our previous clients`}
-        headingColour={`text-neutral-800`}
-        headingSide={`bottom`}
-        theme={`bg-ravenci-gray`}
+        heading={`Some of my previous clients`}
+        headingColour={`text-neutral-100`}
+        headingSide={`top`}
+        theme={`bg-ravenci`}
         speed={`normal`}
       />
 
-      <HomeOneColumnLeft
-        tagline={`stable`}
-        title={`Good development isn't fragile`}
-        content={`stable`}
-        ctaLink={`/about`}
-        ctaText={`Here's why we are confident`}
-        ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}
-      />
+      {/*<HomeOneColumnLeft*/}
+      {/*  tagline={`stable`}*/}
+      {/*  title={`Good development isn't fragile`}*/}
+      {/*  content={`stable`}*/}
+      {/*  ctaLink={`/about`}*/}
+      {/*  ctaText={`Here's why we are confident`}*/}
+      {/*  ctaTitle={`Find out why, at RAVENCI, I am confident that your website will be stable`}*/}
+      {/*/>*/}
 
       <HomeStepsSection />
 
-      <HomeOneColumnRight
-        tagline={`reliable`}
-        title={`Expert developers build for the future, today`}
-        content={`reliable`}
-        ctaLink={`/start-a-project`}
-        ctaText={`Start a New Project`}
-        ctaTitle={`Develop with RAVENCI, today`}
-      />
+      {/*<HomeOneColumnRight*/}
+      {/*  tagline={`reliable`}*/}
+      {/*  title={`Expert developers build for the future, today`}*/}
+      {/*  content={`reliable`}*/}
+      {/*  ctaLink={`/start-a-project`}*/}
+      {/*  ctaText={`Start a New Project`}*/}
+      {/*  ctaTitle={`Develop with RAVENCI, today`}*/}
+      {/*/>*/}
 
       {/* Technologies I Use */}
       <LogosPanel speed={`slow`} />
@@ -83,14 +83,14 @@ export default function Home() {
         image={null}
       />
 
-      <HomeOneColumnCenter
-        tagline={`reliable`}
-        title={`Technology changes often but change rarely offers reliability`}
-        content={`reliable`}
-        ctaLink={`/packages/maintenance`}
-        ctaText={`See Our Pricing`}
-        ctaTitle={`View all of our Packages and Prices`}
-      />
+      {/*<HomeOneColumnCenter*/}
+      {/*  tagline={`reliable`}*/}
+      {/*  title={`Technology changes often but change rarely offers reliability`}*/}
+      {/*  content={`reliable`}*/}
+      {/*  ctaLink={`/packages/maintenance`}*/}
+      {/*  ctaText={`See Our Pricing`}*/}
+      {/*  ctaTitle={`View all of our Packages and Prices`}*/}
+      {/*/>*/}
     </main>
   );
 }
@@ -116,11 +116,11 @@ const CLIENT_LOGOS = [
     logo: "/clients/cadeaurable-logo.svg",
     href: "https://cadeaurable.com.au/",
   },
-  {
-    title: "Book it MATE",
-    logo: "/clients/book-it-mate-logo.svg",
-    href: "https://bookitmate.com.au/",
-  },
+  // {
+  //   title: "Book it MATE",
+  //   logo: "/clients/book-it-mate-logo.svg",
+  //   href: "https://bookitmate.com.au/",
+  // },
   {
     title: "My Pop Off",
     logo: "/clients/my-pop-off-logo.svg",
@@ -135,5 +135,15 @@ const CLIENT_LOGOS = [
     title: "Intercorp",
     logo: "/clients/intercorp-logo.svg",
     href: "https://intercorpdevelopments.com.au/",
+  },
+  {
+    title: "Vipertac",
+    logo: "/clients/vipertac-logo.svg",
+    href: "https://vipertac.com.au/",
+  },
+  {
+    title: "Family Covenant Church",
+    logo: "/clients/family-covenant-church-logo.svg",
+    href: "https://www.facebook.com/familycovenantchurch.org/",
   },
 ];

@@ -61,7 +61,7 @@ const MainNavigation = (props: MainNavigationProps) => {
 
       {/* Actual Navigation */}
       <nav
-        className={`${navBehaviour} px-4 py-6 lg:py-4 flex justify-between w-full bg-white shadow-lg shadow-ravenci/5 transition-all duration-500 z-50`}
+        className={`${navBehaviour} px-4 py-6 lg:py-4 flex justify-center w-full bg-white shadow-lg shadow-ravenci/5 transition-all duration-500 z-50`}
       >
         <div
           className={`absolute top-0 left-0 bg-white w-full h-full z-0`}
@@ -88,43 +88,43 @@ const MainNavigation = (props: MainNavigationProps) => {
             onClick={() => setNavOpen(!navOpen)}
           />
 
-          <article
-            className={`fixed lg:relative px-3 sm:px-6 lg:px-0 pb-2 pt-20 lg:p-0 ${
-              navOpen ? "top-0 lg:right-auto" : "-top-full lg:right-auto"
-            } lg:top-auto right-0 w-full lg:max-w-full lg:h-auto bg-ravenci-light-gray lg:bg-transparent transition-all duration-500 -z-20 lg:z-0`}
-          >
-            <ul className={`flex flex-col lg:flex-row items-stretch lg:gap-4`}>
-              {props.pages.map((page, index) => (
-                <Link
-                  key={`page-${index}`}
-                  href={page.link}
-                  title={page.title}
-                  className={``}
-                >
-                  <li
-                    className={`group relative mb-5 lg:mb-0 p-4 px-8 pb-3 lg:py-1.5 lg:px-2 ${
-                      page.link === pathname
-                        ? "bg-ravenci-primary lg:bg-transparent font-bold"
-                        : "bg-transparent"
-                    } hover:bg-ravenci-primary/10 lg:hover:bg-transparent transition-all duration-500 overflow-hidden`}
-                  >
-                    <span
-                      className={`relative font-poppins text-base sm:text-sm lg:text-xs ${
-                        page.link === pathname
-                          ? "text-ravenci-light-gray lg:text-ravenci-primary"
-                          : "text-ravenci"
-                      } uppercase z-10 transition-all duration-250`}
-                    >
-                      {page.text}
-                    </span>
-                    <div
-                      className={`absolute hidden lg:block bottom-0 right-full group-hover:right-0 w-full h-1 bg-ravenci-primary transition-all duration-500`}
-                    ></div>
-                  </li>
-                </Link>
-              ))}
-            </ul>
-          </article>
+          {/*<article*/}
+          {/*  className={`fixed lg:relative px-3 sm:px-6 lg:px-0 pb-2 pt-20 lg:p-0 ${*/}
+          {/*    navOpen ? "top-0 lg:right-auto" : "-top-full lg:right-auto"*/}
+          {/*  } lg:top-auto right-0 w-full lg:max-w-full lg:h-auto bg-ravenci-light-gray lg:bg-transparent transition-all duration-500 -z-20 lg:z-0`}*/}
+          {/*>*/}
+          {/*  <ul className={`flex flex-col lg:flex-row items-stretch lg:gap-4`}>*/}
+          {/*    {props.pages.map((page, index) => (*/}
+          {/*      <Link*/}
+          {/*        key={`page-${index}`}*/}
+          {/*        href={page.link}*/}
+          {/*        title={page.title}*/}
+          {/*        className={``}*/}
+          {/*      >*/}
+          {/*        <li*/}
+          {/*          className={`group relative mb-5 lg:mb-0 p-4 px-8 pb-3 lg:py-1.5 lg:px-2 ${*/}
+          {/*            page.link === pathname*/}
+          {/*              ? "bg-ravenci-primary lg:bg-transparent font-bold"*/}
+          {/*              : "bg-transparent"*/}
+          {/*          } hover:bg-ravenci-primary/10 lg:hover:bg-transparent transition-all duration-500 overflow-hidden`}*/}
+          {/*        >*/}
+          {/*          <span*/}
+          {/*            className={`relative font-poppins text-base sm:text-sm lg:text-xs ${*/}
+          {/*              page.link === pathname*/}
+          {/*                ? "text-ravenci-light-gray lg:text-ravenci-primary"*/}
+          {/*                : "text-ravenci"*/}
+          {/*            } uppercase z-10 transition-all duration-250`}*/}
+          {/*          >*/}
+          {/*            {page.text}*/}
+          {/*          </span>*/}
+          {/*          <div*/}
+          {/*            className={`absolute hidden lg:block bottom-0 right-full group-hover:right-0 w-full h-1 bg-ravenci-primary transition-all duration-500`}*/}
+          {/*          ></div>*/}
+          {/*        </li>*/}
+          {/*      </Link>*/}
+          {/*    ))}*/}
+          {/*  </ul>*/}
+          {/*</article>*/}
         </section>
       </nav>
     </>
